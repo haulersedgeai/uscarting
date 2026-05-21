@@ -1,0 +1,168 @@
+import type { DumpsterSize } from "./types";
+
+export const DUMPSTER_SIZES: DumpsterSize[] = [
+  {
+    slug: "10-yard-dumpster",
+    size: "10 Cubic Yard",
+    title: "10 Yard Dumpster Rental",
+    h1: "10 Yard Roll-Off Dumpster Rental",
+    metaTitle: "10 Yard Dumpster Rental in CT & Westchester | U.S. Carting",
+    metaDescription:
+      "Compact 10-yard roll-off dumpster — perfect for bathroom remodels, garage clean-outs and small renovations. 1,000 lbs included, 7-day rental, same-day drop.",
+    cubicYards: 10,
+    dimensions: "12 ft L × 8 ft W × 3.5 ft H (approx.)",
+    weightLimit: "1,000 lbs included",
+    includedTonnage: "1,000 lbs included; overage billed per ton",
+    rentalPeriod: "7 days standard",
+    bestFor: [
+      "Small bathroom or kitchen remodels",
+      "Single-room clean-outs",
+      "Garage or attic decluttering",
+      "Roofing tear-offs up to ~15 squares",
+      "Concrete or dirt loads (heavy materials)",
+    ],
+    whatFits: [
+      "Roughly 4 pickup-truck loads of debris",
+      "About 60 large contractor trash bags",
+      "Furniture from a single room",
+      "Light demo debris (drywall, flooring, cabinets)",
+    ],
+    whatDoesntFit: [
+      "Whole-house clean-outs",
+      "Full roof replacement of a large home",
+      "Multi-room renovation debris",
+    ],
+    commonUseCases: [
+      "Bathroom or powder-room gut",
+      "Garage purge before listing a home",
+      "Spring clean-out for one floor",
+      "Deck or shed demo",
+    ],
+    intro:
+      "Our 10-yard roll-off is the workhorse for tight driveways and small jobs. It holds about four pickup-truck loads and slides into spots a bigger can wouldn't fit. Drop today, fill it on your schedule, and we'll pick it up when you're done.",
+    image: "/images/dumpster-10.png",
+    relatedSlugs: ["15-yard-dumpster", "20-yard-dumpster"],
+  },
+  {
+    slug: "15-yard-dumpster",
+    size: "15 Cubic Yard",
+    title: "15 Yard Dumpster Rental",
+    h1: "15 Yard Roll-Off Dumpster Rental",
+    metaTitle: "15 Yard Dumpster Rental in CT & Westchester | U.S. Carting",
+    metaDescription:
+      "15-yard roll-off dumpster for mid-sized renovations and clean-outs. 2,000 lbs included, 7-day rental, walk-in door. Serving Fairfield, Westchester & beyond.",
+    cubicYards: 15,
+    dimensions: "14 ft L × 8 ft W × 4.5 ft H (approx.)",
+    weightLimit: "2,000 lbs included",
+    includedTonnage: "2,000 lbs included; overage billed per ton",
+    rentalPeriod: "7 days standard",
+    bestFor: [
+      "Mid-size kitchen remodels",
+      "Two-room renovations",
+      "Basement clean-outs",
+      "Mid-size roofing jobs",
+      "Yard waste and landscaping debris",
+    ],
+    whatFits: [
+      "Roughly 6 pickup-truck loads",
+      "About 90 large contractor trash bags",
+      "A full basement worth of clutter",
+      "Cabinets, countertops, and flooring from one mid-size kitchen",
+    ],
+    whatDoesntFit: [
+      "Heavy concrete in volume (use the 10-yard)",
+      "Full-house gut renovations",
+    ],
+    commonUseCases: [
+      "Mid-size kitchen remodel",
+      "Basement clean-out",
+      "Landscape tear-out and replant",
+      "Mid-size estate clean-up",
+    ],
+    intro:
+      "Our 15-yard is the sweet spot — bigger than the 10 with the same compact footprint that fits most driveways. Two thousand pounds of weight come included, so you can mix construction debris with household haul-outs without worrying about a ticket.",
+    image: "/images/dumpster-15.png",
+    relatedSlugs: ["10-yard-dumpster", "20-yard-dumpster"],
+  },
+  {
+    slug: "20-yard-dumpster",
+    size: "20 Cubic Yard",
+    title: "20 Yard Dumpster Rental",
+    h1: "20 Yard Roll-Off Dumpster Rental",
+    metaTitle: "20 Yard Dumpster Rental in CT & Westchester | U.S. Carting",
+    metaDescription:
+      "20-yard roll-off for full-house renovations and contractor job sites. 4,000 lbs included, 7-day rental. Same-day delivery across CT and Westchester.",
+    cubicYards: 20,
+    dimensions: "16 ft L × 8 ft W × 4.5 ft H (approx.)",
+    weightLimit: "4,000 lbs included",
+    includedTonnage: "4,000 lbs included; overage billed per ton",
+    rentalPeriod: "7 days standard",
+    bestFor: [
+      "Whole-house renovations",
+      "Roof replacement up to ~30 squares",
+      "Full estate or foreclosure clean-outs",
+      "Contractor demo jobs",
+      "Multi-room flooring tear-out",
+    ],
+    whatFits: [
+      "Roughly 8 pickup-truck loads",
+      "About 120 large contractor trash bags",
+      "A whole-house worth of furniture and clutter",
+      "Mid-size demolition debris",
+    ],
+    whatDoesntFit: [
+      "Massive commercial demo (step up to 30/40)",
+      "Concrete-only loads (use the 10)",
+    ],
+    commonUseCases: [
+      "Whole-home remodel",
+      "Estate clean-out",
+      "Roof replacement",
+      "Multi-room flooring rip-out",
+    ],
+    intro:
+      "The 20-yard handles 90% of the jobs we get called on — full-home renovations, contractor builds, and estate clean-outs. Four thousand pounds of weight come included, so a mixed load of demo and household debris won't push you over.",
+    image: "/images/dumpster-20.png",
+    relatedSlugs: ["15-yard-dumpster", "30-40-yard-dumpster"],
+  },
+  {
+    slug: "30-40-yard-dumpster",
+    size: "30 / 40 Cubic Yard",
+    title: "30 & 40 Yard Dumpster Rental",
+    h1: "30 & 40 Yard Roll-Off Dumpster Rental",
+    metaTitle: "30 & 40 Yard Dumpster Rental in CT & Westchester | U.S. Carting",
+    metaDescription:
+      "Our largest roll-offs for big demolition, commercial builds and whole-property clean-outs. 6,000 lbs included, 7-day rental, contractor-grade service.",
+    cubicYards: 30,
+    dimensions: "22 ft L × 8 ft W × 6 ft H (approx.)",
+    weightLimit: "6,000 lbs included",
+    includedTonnage: "6,000 lbs included; overage billed per ton",
+    rentalPeriod: "7 days standard",
+    bestFor: [
+      "Whole-property clean-outs",
+      "Commercial demolition",
+      "Large construction sites",
+      "New builds and additions",
+      "Light, high-volume material like siding or cabinets",
+    ],
+    whatFits: [
+      "Roughly 12 pickup-truck loads",
+      "About 180 large contractor trash bags",
+      "Furniture and contents of a full single-family home",
+      "Two layers of roofing on a large home",
+    ],
+    whatDoesntFit: [
+      "Concrete-heavy loads — they hit weight before they fill volume",
+    ],
+    commonUseCases: [
+      "Whole-property clean-out",
+      "Commercial remodel",
+      "New construction debris",
+      "Major demolition",
+    ],
+    intro:
+      "When the job is big, the 30 and 40-yard cans are what contractors call for. Six thousand pounds of weight come included, and the high walls mean light, bulky material — siding, cabinets, framing — packs in fast.",
+    image: "/images/dumpster-30-40.png",
+    relatedSlugs: ["20-yard-dumpster", "15-yard-dumpster"],
+  },
+];

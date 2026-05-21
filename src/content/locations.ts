@@ -1,0 +1,1488 @@
+import type { LocationItem } from "./types";
+
+// Service area: Fairfield, New Haven, Hartford, Middlesex, Litchfield, New London (CT)
+// + Westchester (NY). Each location includes real neighborhoods/landmarks for SEO.
+
+export const LOCATIONS: LocationItem[] = [
+  // ─────────────────────── FAIRFIELD COUNTY, CT ───────────────────────
+  {
+    slug: "greenwich-ct",
+    name: "Greenwich",
+    fullName: "Greenwich, CT",
+    type: "city",
+    county: "Fairfield County",
+    state: "CT",
+    metaTitle: "Dumpster Rental & Junk Removal in Greenwich, CT | U.S. Carting",
+    metaDescription:
+      "Same-day roll-off dumpsters and full-service junk removal in Greenwich, CT. From Old Greenwich to Backcountry — we know the driveways.",
+    intro:
+      "Greenwich is home base. Our office sits on S. Water Street downtown, which means we know which Round Hill driveways need a smaller can and which Old Greenwich streets the truck can actually back into. From Belle Haven to Backcountry, same-day drops are the norm.",
+    neighborhoods: [
+      "Old Greenwich",
+      "Cos Cob",
+      "Riverside",
+      "Belle Haven",
+      "Byram",
+      "Glenville",
+      "Pemberwick",
+      "Backcountry",
+      "Mid-Country",
+      "Chickahominy",
+    ],
+    landmarks: [
+      "Greenwich Avenue",
+      "Tod's Point / Greenwich Point Park",
+      "Bruce Museum",
+      "Bruce Park",
+      "Greenwich Harbor",
+      "I-95 Exit 3",
+      "Merritt Parkway Exit 28",
+    ],
+    zipCodes: ["06830", "06831", "06870", "06878"],
+  },
+  {
+    slug: "stamford-ct",
+    name: "Stamford",
+    fullName: "Stamford, CT",
+    type: "city",
+    county: "Fairfield County",
+    state: "CT",
+    metaTitle: "Dumpster Rental & Junk Removal in Stamford, CT | U.S. Carting",
+    metaDescription:
+      "Same-day dumpster rentals and junk removal across Stamford — Shippan to North Stamford, downtown high-rises to Springdale homes.",
+    intro:
+      "Stamford is mixed terrain — high-rises downtown, narrow streets in Shippan, big lots out in North Stamford. We size the can to the driveway and route the truck around rush hour on I-95.",
+    neighborhoods: [
+      "Downtown Stamford",
+      "Shippan",
+      "Glenbrook",
+      "Springdale",
+      "Newfield",
+      "North Stamford",
+      "Cove",
+      "Westover",
+      "Waterside",
+      "Long Ridge",
+    ],
+    landmarks: [
+      "Stamford Town Center",
+      "Mill River Park",
+      "Cove Island Park",
+      "Stamford Transportation Center",
+      "I-95 Exits 6–9",
+      "Merritt Parkway Exits 33–35",
+    ],
+    zipCodes: ["06901", "06902", "06903", "06905", "06906", "06907"],
+  },
+  {
+    slug: "norwalk-ct",
+    name: "Norwalk",
+    fullName: "Norwalk, CT",
+    type: "city",
+    county: "Fairfield County",
+    state: "CT",
+    metaTitle: "Dumpster Rental & Junk Removal in Norwalk, CT | U.S. Carting",
+    metaDescription:
+      "Roll-off dumpsters and same-day junk removal in Norwalk — SoNo, Rowayton, East Norwalk, West Norwalk and beyond.",
+    intro:
+      "Norwalk's older homes mean tight driveways and steep basement stairs — we've done both. From SoNo lofts to Rowayton waterfront work, our crew knows the neighborhoods.",
+    neighborhoods: [
+      "South Norwalk (SoNo)",
+      "East Norwalk",
+      "West Norwalk",
+      "Rowayton",
+      "Cranbury",
+      "Silvermine",
+      "Wolfpit",
+      "Norwalk Center",
+    ],
+    landmarks: [
+      "Maritime Aquarium",
+      "Calf Pasture Beach",
+      "Cranbury Park",
+      "Norwalk Hospital",
+      "I-95 Exits 13–16",
+    ],
+    zipCodes: ["06850", "06851", "06853", "06854", "06855", "06856"],
+  },
+  {
+    slug: "westport-ct",
+    name: "Westport",
+    fullName: "Westport, CT",
+    type: "town",
+    county: "Fairfield County",
+    state: "CT",
+    metaTitle: "Dumpster Rental & Junk Removal in Westport, CT | U.S. Carting",
+    metaDescription:
+      "Same-day roll-off drops and full-service junk removal in Westport — from Compo Beach to Coleytown, Saugatuck to Greens Farms.",
+    intro:
+      "Renovation activity in Westport is constant. We bring the 15 and 20-yard cans you need and don't park them anywhere that would upset the neighbors.",
+    neighborhoods: [
+      "Compo Beach",
+      "Saugatuck",
+      "Greens Farms",
+      "Old Hill",
+      "Coleytown",
+      "Long Lots",
+      "Downtown Westport",
+    ],
+    landmarks: [
+      "Compo Beach",
+      "Sherwood Island State Park",
+      "Westport Country Playhouse",
+      "Main Street Westport",
+      "I-95 Exits 17–18",
+    ],
+    zipCodes: ["06880"],
+  },
+  {
+    slug: "darien-ct",
+    name: "Darien",
+    fullName: "Darien, CT",
+    type: "town",
+    county: "Fairfield County",
+    state: "CT",
+    metaTitle: "Dumpster Rental & Junk Removal in Darien, CT | U.S. Carting",
+    metaDescription:
+      "Discreet, same-day dumpster rentals and clean-outs in Darien — Tokeneke to Noroton Heights.",
+    intro:
+      "Darien clients expect a quiet, clean operation — and we keep it that way. Boards under the can on the asphalt, sweep on the way out.",
+    neighborhoods: [
+      "Tokeneke",
+      "Noroton",
+      "Noroton Heights",
+      "Delafield Island",
+      "Darien Center",
+    ],
+    landmarks: [
+      "Weed Beach",
+      "Pear Tree Point Beach",
+      "Darien Train Station",
+      "I-95 Exits 10–11",
+    ],
+    zipCodes: ["06820"],
+  },
+  {
+    slug: "new-canaan-ct",
+    name: "New Canaan",
+    fullName: "New Canaan, CT",
+    type: "town",
+    county: "Fairfield County",
+    state: "CT",
+    metaTitle: "Dumpster Rental & Junk Removal in New Canaan, CT | U.S. Carting",
+    metaDescription:
+      "Junk removal and roll-off dumpsters across New Canaan — from downtown to Silvermine to Carter Street.",
+    intro:
+      "New Canaan's long driveways mean longer carries — we send the right-sized crew. The 15-yard usually splits the difference for renovation jobs.",
+    neighborhoods: [
+      "Downtown New Canaan",
+      "Silvermine",
+      "Carter Street",
+      "Smith Ridge",
+      "West School",
+    ],
+    landmarks: [
+      "Waveny Park",
+      "Glass House",
+      "New Canaan Train Station",
+      "Merritt Parkway Exit 37",
+    ],
+    zipCodes: ["06840"],
+  },
+  {
+    slug: "fairfield-ct",
+    name: "Fairfield",
+    fullName: "Fairfield, CT",
+    type: "town",
+    county: "Fairfield County",
+    state: "CT",
+    metaTitle: "Dumpster Rental & Junk Removal in Fairfield, CT | U.S. Carting",
+    metaDescription:
+      "Same-day dumpsters and full-service junk removal across Fairfield — Greenfield Hill, Southport, Black Rock Turnpike and beyond.",
+    intro:
+      "Fairfield runs the gamut — Southport waterfront work, Greenfield Hill country homes, busy Black Rock Turnpike commercial. We handle all of it from the same crew.",
+    neighborhoods: [
+      "Southport",
+      "Greenfield Hill",
+      "Stratfield",
+      "Tunxis Hill",
+      "Black Rock Turnpike",
+      "Downtown Fairfield",
+    ],
+    landmarks: [
+      "Penfield Beach",
+      "Fairfield University",
+      "Sacred Heart University",
+      "I-95 Exits 19–22",
+    ],
+    zipCodes: ["06824", "06825", "06890"],
+  },
+  {
+    slug: "bridgeport-ct",
+    name: "Bridgeport",
+    fullName: "Bridgeport, CT",
+    type: "city",
+    county: "Fairfield County",
+    state: "CT",
+    metaTitle: "Dumpster Rental & Junk Removal in Bridgeport, CT | U.S. Carting",
+    metaDescription:
+      "Roll-off rentals and full-service junk removal across Bridgeport — North End to Black Rock, Brooklawn to East Side.",
+    intro:
+      "Bridgeport has more housing stock than any town we serve. Triple-deckers, brick walk-ups, big single-family — we've cleared them all. Same-day pickup, weekday pricing.",
+    neighborhoods: [
+      "Black Rock",
+      "North End",
+      "East End",
+      "East Side",
+      "Brooklawn",
+      "South End",
+      "Mill Hill",
+    ],
+    landmarks: [
+      "Seaside Park",
+      "Beardsley Park & Zoo",
+      "Downtown Bridgeport",
+      "I-95 Exits 25–29",
+    ],
+    zipCodes: ["06604", "06605", "06606", "06607", "06608", "06610", "06611"],
+  },
+  {
+    slug: "stratford-ct",
+    name: "Stratford",
+    fullName: "Stratford, CT",
+    type: "town",
+    county: "Fairfield County",
+    state: "CT",
+    metaTitle: "Dumpster Rental & Junk Removal in Stratford, CT | U.S. Carting",
+    metaDescription:
+      "Same-day dumpsters and junk removal in Stratford, CT — Lordship to North End, downtown to Paradise Green.",
+    intro:
+      "Stratford clean-outs are our bread and butter — older homes, full basements, garages that haven't been touched in 30 years. We work fast and clean.",
+    neighborhoods: [
+      "Lordship",
+      "Paradise Green",
+      "North End Stratford",
+      "Downtown Stratford",
+      "Oronoque",
+    ],
+    landmarks: [
+      "Short Beach",
+      "Boothe Memorial Park",
+      "Sikorsky Memorial Airport",
+      "I-95 Exits 30–33",
+    ],
+    zipCodes: ["06614", "06615"],
+  },
+  {
+    slug: "shelton-ct",
+    name: "Shelton",
+    fullName: "Shelton, CT",
+    type: "city",
+    county: "Fairfield County",
+    state: "CT",
+    metaTitle: "Dumpster Rental & Junk Removal in Shelton, CT | U.S. Carting",
+    metaDescription:
+      "Dumpster rentals and junk removal across Shelton — Huntington, Pine Rock Park, White Hills, and downtown.",
+    intro:
+      "Shelton's a mix of older Naugatuck Valley homes and newer corporate parks. We do both — house clean-outs and office breakdowns from the same truck.",
+    neighborhoods: [
+      "Huntington",
+      "Pine Rock Park",
+      "White Hills",
+      "Downtown Shelton",
+      "Long Hill",
+    ],
+    landmarks: [
+      "Indian Well State Park",
+      "Riverwalk",
+      "Route 8",
+      "Bridgeport Avenue corporate corridor",
+    ],
+    zipCodes: ["06484"],
+  },
+  {
+    slug: "trumbull-ct",
+    name: "Trumbull",
+    fullName: "Trumbull, CT",
+    type: "town",
+    county: "Fairfield County",
+    state: "CT",
+    metaTitle: "Dumpster Rental & Junk Removal in Trumbull, CT | U.S. Carting",
+    metaDescription:
+      "Roll-off rentals and junk removal in Trumbull — Long Hill, Nichols, Tashua, and the Westfield Mall corridor.",
+    intro:
+      "Trumbull's a clean-out town — lots of long-tenured homeowners downsizing or moving. Big garages, fuller basements. We bring the right size for the job.",
+    neighborhoods: ["Long Hill", "Nichols", "Tashua", "Trumbull Center"],
+    landmarks: [
+      "Westfield Trumbull Mall",
+      "Old Mine Park",
+      "Indian Ledge Park",
+      "Merritt Parkway Exits 49–52",
+    ],
+    zipCodes: ["06611"],
+  },
+  {
+    slug: "wilton-ct",
+    name: "Wilton",
+    fullName: "Wilton, CT",
+    type: "town",
+    county: "Fairfield County",
+    state: "CT",
+    metaTitle: "Dumpster Rental & Junk Removal in Wilton, CT | U.S. Carting",
+    metaDescription:
+      "Same-day roll-off dumpsters and junk removal in Wilton — Cannondale to Georgetown.",
+    intro:
+      "Wilton's big country lots can swallow a 20-yard can without anyone noticing. We've done a lot of estate work here and we keep it discreet.",
+    neighborhoods: ["Cannondale", "Georgetown", "Wilton Center", "Nod Hill"],
+    landmarks: [
+      "Weir Farm National Historical Park",
+      "Wilton Town Center",
+      "Route 7 / Merritt Parkway Exit 40",
+    ],
+    zipCodes: ["06897"],
+  },
+  {
+    slug: "ridgefield-ct",
+    name: "Ridgefield",
+    fullName: "Ridgefield, CT",
+    type: "town",
+    county: "Fairfield County",
+    state: "CT",
+    metaTitle: "Dumpster Rental & Junk Removal in Ridgefield, CT | U.S. Carting",
+    metaDescription:
+      "Roll-off dumpsters and clean-out service in Ridgefield, CT — Main Street, West Mountain and beyond.",
+    intro:
+      "Ridgefield homes lean older and bigger. We've cleared century-old colonials, demoed sheds, and hauled out attics that hadn't been touched since the Carter administration.",
+    neighborhoods: ["Main Street", "West Mountain", "Branchville", "Ridgebury", "Titicus"],
+    landmarks: ["Ridgefield Playhouse", "Aldrich Contemporary Art Museum", "Route 7"],
+    zipCodes: ["06877"],
+  },
+  {
+    slug: "bethel-ct",
+    name: "Bethel",
+    fullName: "Bethel, CT",
+    type: "town",
+    county: "Fairfield County",
+    state: "CT",
+    metaTitle: "Dumpster Rental & Junk Removal in Bethel, CT | U.S. Carting",
+    metaDescription:
+      "Same-day roll-off rentals and full-service junk removal in Bethel, CT.",
+    intro:
+      "Bethel sits at the I-84 / Route 6 junction, so we get there fast — and small-town Bethel driveways suit the 10 and 15-yard cans.",
+    neighborhoods: ["Downtown Bethel", "Stony Hill", "Plumtrees"],
+    landmarks: ["Bethel Cinema", "Stony Hill Plaza", "I-84 Exits 8–9"],
+    zipCodes: ["06801"],
+  },
+  {
+    slug: "redding-ct",
+    name: "Redding",
+    fullName: "Redding, CT",
+    type: "town",
+    county: "Fairfield County",
+    state: "CT",
+    metaTitle: "Dumpster Rental & Junk Removal in Redding, CT | U.S. Carting",
+    metaDescription:
+      "Junk removal and roll-off dumpsters in Redding — West Redding, Redding Ridge, Georgetown.",
+    intro:
+      "Redding is rural enough that a roll-off is a bit of a sight — we drop it where you tell us, pick it up when you call, no fuss.",
+    neighborhoods: ["West Redding", "Redding Ridge", "Georgetown", "Redding Center"],
+    landmarks: ["Putnam Memorial State Park", "Mark Twain Library", "Route 7"],
+    zipCodes: ["06896"],
+  },
+  {
+    slug: "easton-ct",
+    name: "Easton",
+    fullName: "Easton, CT",
+    type: "town",
+    county: "Fairfield County",
+    state: "CT",
+    metaTitle: "Dumpster Rental & Junk Removal in Easton, CT | U.S. Carting",
+    metaDescription:
+      "Same-day junk removal and dumpsters in Easton, CT — country lots, big garages, full clean-outs.",
+    intro:
+      "Easton is one-acre-minimum country. Sheds, barns, and outbuildings come down often here, and we bring the equipment to do it.",
+    neighborhoods: ["Easton Center", "Aspetuck"],
+    landmarks: ["Aspetuck Reservoir", "Samuel Staples Elementary", "Route 58"],
+    zipCodes: ["06612"],
+  },
+  {
+    slug: "weston-ct",
+    name: "Weston",
+    fullName: "Weston, CT",
+    type: "town",
+    county: "Fairfield County",
+    state: "CT",
+    metaTitle: "Dumpster Rental & Junk Removal in Weston, CT | U.S. Carting",
+    metaDescription:
+      "Roll-off dumpsters and junk removal in Weston, CT — big lots, big jobs, clean delivery.",
+    intro:
+      "Weston's wooded lots make for big jobs and bigger dumpsters. We bring the 20 or 30-yard when the project calls for it.",
+    neighborhoods: ["Weston Center", "Lower Weston"],
+    landmarks: ["Devil's Den Preserve", "Weston Library", "Route 57"],
+    zipCodes: ["06883"],
+  },
+
+  // ─────────────────────── NEW HAVEN COUNTY, CT ───────────────────────
+  {
+    slug: "milford-ct",
+    name: "Milford",
+    fullName: "Milford, CT",
+    type: "city",
+    county: "New Haven County",
+    state: "CT",
+    metaTitle: "Dumpster Rental & Junk Removal in Milford, CT | U.S. Carting",
+    metaDescription:
+      "Same-day roll-off rentals and junk removal across Milford — Walnut Beach to Devon, downtown to Woodmont.",
+    intro:
+      "Milford's a quick run up I-95. We do beach-side clean-outs in Walnut Beach and Woodmont, plus mainland renovation work.",
+    neighborhoods: ["Walnut Beach", "Woodmont", "Devon", "Downtown Milford"],
+    landmarks: ["Silver Sands State Park", "Milford Green", "I-95 Exits 34–40"],
+    zipCodes: ["06460", "06461"],
+  },
+  {
+    slug: "new-haven-ct",
+    name: "New Haven",
+    fullName: "New Haven, CT",
+    type: "city",
+    county: "New Haven County",
+    state: "CT",
+    metaTitle: "Dumpster Rental & Junk Removal in New Haven, CT | U.S. Carting",
+    metaDescription:
+      "Roll-off dumpsters and junk removal across New Haven — East Rock, Wooster Square, Westville, the Hill.",
+    intro:
+      "New Haven means narrow streets, walk-ups, and clean-outs that need a crew that can handle stairs. We do all of it — and we plan around Yale traffic.",
+    neighborhoods: [
+      "East Rock",
+      "Wooster Square",
+      "Westville",
+      "The Hill",
+      "Fair Haven",
+      "Downtown New Haven",
+    ],
+    landmarks: [
+      "Yale University",
+      "New Haven Green",
+      "East Rock Park",
+      "I-95 / I-91 junction",
+    ],
+    zipCodes: ["06510", "06511", "06513", "06515"],
+  },
+  {
+    slug: "west-haven-ct",
+    name: "West Haven",
+    fullName: "West Haven, CT",
+    type: "city",
+    county: "New Haven County",
+    state: "CT",
+    metaTitle: "Dumpster Rental & Junk Removal in West Haven, CT | U.S. Carting",
+    metaDescription:
+      "Same-day roll-off dumpsters and junk removal in West Haven, CT.",
+    intro:
+      "West Haven's older housing stock means lots of clean-outs, attic work, and basement hauls. We bring the small cans for the tight streets.",
+    neighborhoods: ["Allingtown", "Savin Rock", "West Shore", "Downtown West Haven"],
+    landmarks: ["University of New Haven", "Savin Rock", "I-95 Exits 41–44"],
+    zipCodes: ["06516"],
+  },
+  {
+    slug: "east-haven-ct",
+    name: "East Haven",
+    fullName: "East Haven, CT",
+    type: "town",
+    county: "New Haven County",
+    state: "CT",
+    metaTitle: "Dumpster Rental & Junk Removal in East Haven, CT | U.S. Carting",
+    metaDescription:
+      "Roll-off rentals and full-service junk removal across East Haven, CT.",
+    intro:
+      "East Haven's tight streets call for the 10 or 15-yard. We've done plenty of beach-cottage clean-outs at Momauguin.",
+    neighborhoods: ["Momauguin", "Foxon", "East Haven Center"],
+    landmarks: ["Tweed New Haven Airport", "Cosey Beach", "I-95 Exits 51–52"],
+    zipCodes: ["06512"],
+  },
+  {
+    slug: "orange-ct",
+    name: "Orange",
+    fullName: "Orange, CT",
+    type: "town",
+    county: "New Haven County",
+    state: "CT",
+    metaTitle: "Dumpster Rental & Junk Removal in Orange, CT | U.S. Carting",
+    metaDescription:
+      "Same-day junk removal and dumpster rentals in Orange, CT.",
+    intro:
+      "Orange is suburban country — long driveways, finished basements, and clean-outs that go faster than you'd think.",
+    neighborhoods: ["Orange Center", "Tyler City"],
+    landmarks: ["The Connecticut Post Mall", "Orange Town Fairgrounds", "Route 1"],
+    zipCodes: ["06477"],
+  },
+  {
+    slug: "wallingford-ct",
+    name: "Wallingford",
+    fullName: "Wallingford, CT",
+    type: "town",
+    county: "New Haven County",
+    state: "CT",
+    metaTitle: "Dumpster Rental & Junk Removal in Wallingford, CT | U.S. Carting",
+    metaDescription:
+      "Roll-off dumpsters and junk removal across Wallingford, CT.",
+    intro:
+      "Wallingford clean-outs run the gamut from old North Farms farmhouses to newer Yalesville subdivisions. We size the can to the job.",
+    neighborhoods: ["Yalesville", "North Farms", "Downtown Wallingford", "Wallingford Center"],
+    landmarks: ["Choate Rosemary Hall", "Toyota Oakdale Theatre", "I-91 Exits 13–15"],
+    zipCodes: ["06492"],
+  },
+  {
+    slug: "meriden-ct",
+    name: "Meriden",
+    fullName: "Meriden, CT",
+    type: "city",
+    county: "New Haven County",
+    state: "CT",
+    metaTitle: "Dumpster Rental & Junk Removal in Meriden, CT | U.S. Carting",
+    metaDescription:
+      "Roll-off dumpsters and full-service junk removal in Meriden — same-day delivery, contractor-friendly pricing.",
+    intro:
+      "Meriden has a strong contractor scene and we serve it. Same-day cans, swap-outs, net-30 for repeat clients.",
+    neighborhoods: ["South Meriden", "East Side", "West Side", "Downtown Meriden"],
+    landmarks: ["Hubbard Park", "Castle Craig", "I-691 / I-91 junction"],
+    zipCodes: ["06450", "06451"],
+  },
+  {
+    slug: "cheshire-ct",
+    name: "Cheshire",
+    fullName: "Cheshire, CT",
+    type: "town",
+    county: "New Haven County",
+    state: "CT",
+    metaTitle: "Dumpster Rental & Junk Removal in Cheshire, CT | U.S. Carting",
+    metaDescription:
+      "Same-day dumpsters and junk removal in Cheshire, CT.",
+    intro:
+      "Cheshire is suburban with deep lots — sheds, garages, and basement clean-outs are weekly work for us.",
+    neighborhoods: ["Cheshire Center", "Mixville"],
+    landmarks: ["Cheshire Park", "Lock 12 Historical Park", "Route 10"],
+    zipCodes: ["06410"],
+  },
+  {
+    slug: "derby-ct",
+    name: "Derby",
+    fullName: "Derby, CT",
+    type: "city",
+    county: "New Haven County",
+    state: "CT",
+    metaTitle: "Dumpster Rental & Junk Removal in Derby, CT | U.S. Carting",
+    metaDescription:
+      "Roll-off dumpsters and same-day junk removal across Derby, CT.",
+    intro:
+      "Derby is the smallest city in Connecticut by area, which means tight streets — we send the right truck.",
+    neighborhoods: ["Downtown Derby", "Derby Avenue"],
+    landmarks: ["Derby Greenway", "Osbornedale State Park", "Route 8"],
+    zipCodes: ["06418"],
+  },
+  {
+    slug: "ansonia-ct",
+    name: "Ansonia",
+    fullName: "Ansonia, CT",
+    type: "city",
+    county: "New Haven County",
+    state: "CT",
+    metaTitle: "Dumpster Rental & Junk Removal in Ansonia, CT | U.S. Carting",
+    metaDescription:
+      "Same-day junk removal and roll-off dumpsters in Ansonia, CT.",
+    intro:
+      "Ansonia's older housing stock means full basements and packed garages. We bring the muscle and the truck.",
+    neighborhoods: ["Downtown Ansonia", "Hilltop", "East Side Ansonia"],
+    landmarks: ["Ansonia Nature Center", "Ansonia Armory", "Route 8"],
+    zipCodes: ["06401"],
+  },
+  {
+    slug: "seymour-ct",
+    name: "Seymour",
+    fullName: "Seymour, CT",
+    type: "town",
+    county: "New Haven County",
+    state: "CT",
+    metaTitle: "Dumpster Rental & Junk Removal in Seymour, CT | U.S. Carting",
+    metaDescription:
+      "Roll-off rentals and junk removal in Seymour, CT.",
+    intro:
+      "Seymour clean-outs lean rural — long driveways, lots of yard waste, and the occasional shed teardown.",
+    neighborhoods: ["Downtown Seymour", "Great Hill"],
+    landmarks: ["Seymour Land Trust", "Naugatuck River", "Route 8"],
+    zipCodes: ["06483"],
+  },
+  {
+    slug: "oxford-ct",
+    name: "Oxford",
+    fullName: "Oxford, CT",
+    type: "town",
+    county: "New Haven County",
+    state: "CT",
+    metaTitle: "Dumpster Rental & Junk Removal in Oxford, CT | U.S. Carting",
+    metaDescription:
+      "Junk removal and roll-off dumpsters in Oxford, CT.",
+    intro:
+      "Oxford is country — wooded lots, big sheds, and renovation work all over town. We've got the can sizes for both.",
+    neighborhoods: ["Oxford Center", "Quaker Farms"],
+    landmarks: ["Waterbury-Oxford Airport", "Jackson Cove Park", "Route 67"],
+    zipCodes: ["06478"],
+  },
+
+  // ─────────────────────── WESTCHESTER COUNTY, NY ───────────────────────
+  {
+    slug: "white-plains-ny",
+    name: "White Plains",
+    fullName: "White Plains, NY",
+    type: "city",
+    county: "Westchester County",
+    state: "NY",
+    metaTitle: "Dumpster Rental & Junk Removal in White Plains, NY | U.S. Carting",
+    metaDescription:
+      "Same-day junk removal and roll-off dumpsters in White Plains — downtown high-rises to North Street homes.",
+    intro:
+      "White Plains is the county seat — dense downtown, plenty of office turnover, and residential clean-outs uptown. We do it all.",
+    neighborhoods: ["Downtown White Plains", "Battle Hill", "Highlands", "North Street"],
+    landmarks: ["The Westchester Mall", "White Plains Hospital", "I-287 / I-684 / Bronx River Parkway"],
+    zipCodes: ["10601", "10603", "10604", "10605", "10606"],
+  },
+  {
+    slug: "yonkers-ny",
+    name: "Yonkers",
+    fullName: "Yonkers, NY",
+    type: "city",
+    county: "Westchester County",
+    state: "NY",
+    metaTitle: "Dumpster Rental & Junk Removal in Yonkers, NY | U.S. Carting",
+    metaDescription:
+      "Roll-off dumpsters and full-service junk removal across Yonkers, NY — Park Hill to Crestwood.",
+    intro:
+      "Yonkers is the biggest city in Westchester. Older walk-ups, single-families, and converted multifamily — we handle the full mix.",
+    neighborhoods: ["Park Hill", "Bryn Mawr", "Crestwood", "Getty Square", "Lawrence Park", "Nodine Hill"],
+    landmarks: ["Untermyer Park", "Cross County Center", "Saw Mill River Parkway", "I-87"],
+    zipCodes: ["10701", "10703", "10704", "10705", "10707", "10710"],
+  },
+  {
+    slug: "new-rochelle-ny",
+    name: "New Rochelle",
+    fullName: "New Rochelle, NY",
+    type: "city",
+    county: "Westchester County",
+    state: "NY",
+    metaTitle: "Dumpster Rental & Junk Removal in New Rochelle, NY | U.S. Carting",
+    metaDescription:
+      "Same-day dumpster rentals and junk removal in New Rochelle, NY.",
+    intro:
+      "New Rochelle is busy — high-rise residential downtown, single-family streets uptown. We've cleared both, often same day.",
+    neighborhoods: ["Downtown New Rochelle", "Pelham Manor border", "Wykagyl", "North End", "Beechmont"],
+    landmarks: ["Glen Island", "New Roc City", "I-95 Exits 15–16"],
+    zipCodes: ["10801", "10804", "10805"],
+  },
+  {
+    slug: "rye-ny",
+    name: "Rye",
+    fullName: "Rye, NY",
+    type: "city",
+    county: "Westchester County",
+    state: "NY",
+    metaTitle: "Dumpster Rental & Junk Removal in Rye, NY | U.S. Carting",
+    metaDescription:
+      "Discreet dumpster rentals and junk removal across Rye, NY.",
+    intro:
+      "Rye renovations are constant — we drop the can on time, keep it clean, and pull it the day you call.",
+    neighborhoods: ["Downtown Rye", "Milton", "Greenhaven"],
+    landmarks: ["Playland Park", "Rye Town Park", "I-95 Exit 19"],
+    zipCodes: ["10580"],
+  },
+  {
+    slug: "rye-brook-ny",
+    name: "Rye Brook",
+    fullName: "Rye Brook, NY",
+    type: "village",
+    county: "Westchester County",
+    state: "NY",
+    metaTitle: "Dumpster Rental & Junk Removal in Rye Brook, NY | U.S. Carting",
+    metaDescription:
+      "Same-day roll-off rentals and junk removal in Rye Brook, NY.",
+    intro:
+      "Rye Brook's a tight, friendly village just over the CT line. Our trucks know the way.",
+    neighborhoods: ["Rye Brook Village", "Bowman Avenue"],
+    landmarks: ["Crawford Park", "Doral Arrowwood", "King Street"],
+    zipCodes: ["10573"],
+  },
+  {
+    slug: "harrison-ny",
+    name: "Harrison",
+    fullName: "Harrison, NY",
+    type: "town",
+    county: "Westchester County",
+    state: "NY",
+    metaTitle: "Dumpster Rental & Junk Removal in Harrison, NY | U.S. Carting",
+    metaDescription:
+      "Roll-off dumpsters and junk removal in Harrison, NY — Purchase to West Harrison.",
+    intro:
+      "Harrison spans country club lots in Purchase to tight West Harrison streets. We bring the can size that fits.",
+    neighborhoods: ["Purchase", "West Harrison", "Downtown Harrison", "Sterling Ridge"],
+    landmarks: ["SUNY Purchase", "Westchester County Airport (HPN)", "I-287 / I-684"],
+    zipCodes: ["10528", "10577", "10604"],
+  },
+  {
+    slug: "mamaroneck-ny",
+    name: "Mamaroneck",
+    fullName: "Mamaroneck, NY",
+    type: "village",
+    county: "Westchester County",
+    state: "NY",
+    metaTitle: "Dumpster Rental & Junk Removal in Mamaroneck, NY | U.S. Carting",
+    metaDescription:
+      "Same-day dumpster rentals and junk removal in Mamaroneck, NY.",
+    intro:
+      "Mamaroneck has water-side streets where access matters. We send a scout if we need to and find the right placement.",
+    neighborhoods: ["Orienta", "Larchmont Manor border", "Heathcote Hill"],
+    landmarks: ["Harbor Island Park", "Mamaroneck Harbor", "I-95 Exits 17–18"],
+    zipCodes: ["10543"],
+  },
+  {
+    slug: "scarsdale-ny",
+    name: "Scarsdale",
+    fullName: "Scarsdale, NY",
+    type: "village",
+    county: "Westchester County",
+    state: "NY",
+    metaTitle: "Dumpster Rental & Junk Removal in Scarsdale, NY | U.S. Carting",
+    metaDescription:
+      "Discreet, scheduled dumpster drops and clean-outs across Scarsdale, NY.",
+    intro:
+      "Scarsdale renovations and estates — we keep it discreet, use boards on the asphalt, and pull on the dot.",
+    neighborhoods: ["Heathcote", "Greenacres", "Edgewood", "Quaker Ridge", "Fox Meadow"],
+    landmarks: ["Scarsdale Village", "Scarsdale Train Station", "Bronx River Parkway"],
+    zipCodes: ["10583"],
+  },
+  {
+    slug: "greenburgh-ny",
+    name: "Greenburgh",
+    fullName: "Greenburgh, NY",
+    type: "town",
+    county: "Westchester County",
+    state: "NY",
+    metaTitle: "Dumpster Rental & Junk Removal in Greenburgh, NY | U.S. Carting",
+    metaDescription:
+      "Roll-off rentals and junk removal across Greenburgh, NY — Edgemont, Hartsdale, Ardsley.",
+    intro:
+      "Greenburgh covers a lot of ground — Edgemont, Hartsdale, parts of Ardsley. We've worked them all.",
+    neighborhoods: ["Edgemont", "Hartsdale", "Glenville", "Fairview", "East Irvington"],
+    landmarks: ["Sprain Brook Parkway", "Saw Mill Parkway", "Greenburgh Nature Center"],
+    zipCodes: ["10523", "10530", "10583"],
+  },
+  {
+    slug: "pelham-ny",
+    name: "Pelham",
+    fullName: "Pelham, NY",
+    type: "village",
+    county: "Westchester County",
+    state: "NY",
+    metaTitle: "Dumpster Rental & Junk Removal in Pelham, NY | U.S. Carting",
+    metaDescription:
+      "Same-day junk removal and roll-off dumpsters in Pelham, NY.",
+    intro:
+      "Pelham is dense — narrow streets, walk-up basements. The 10 and 15-yard cans were made for these driveways.",
+    neighborhoods: ["Pelham Heights", "Pelham Manor", "Chester Park"],
+    landmarks: ["Pelham Bay Park (border)", "Pelham Train Station", "Hutchinson River Parkway"],
+    zipCodes: ["10803"],
+  },
+  {
+    slug: "bedford-ny",
+    name: "Bedford",
+    fullName: "Bedford, NY",
+    type: "town",
+    county: "Westchester County",
+    state: "NY",
+    metaTitle: "Dumpster Rental & Junk Removal in Bedford, NY | U.S. Carting",
+    metaDescription:
+      "Roll-off dumpsters and full-service clean-outs in Bedford, NY — including Bedford Hills and Katonah.",
+    intro:
+      "Bedford's big-lot country — we send the right-sized can and the right-sized crew.",
+    neighborhoods: ["Bedford Hills", "Katonah", "Bedford Village"],
+    landmarks: ["John Jay Homestead", "Bedford Playhouse", "Saw Mill Parkway"],
+    zipCodes: ["10506", "10507", "10536"],
+  },
+  {
+    slug: "mount-kisco-ny",
+    name: "Mount Kisco",
+    fullName: "Mount Kisco, NY",
+    type: "village",
+    county: "Westchester County",
+    state: "NY",
+    metaTitle: "Dumpster Rental & Junk Removal in Mount Kisco, NY | U.S. Carting",
+    metaDescription:
+      "Same-day dumpster rentals and junk removal in Mount Kisco, NY.",
+    intro:
+      "Mount Kisco is a hub for North Westchester — we run there often and we know the back streets.",
+    neighborhoods: ["Downtown Mount Kisco", "Sarles Street"],
+    landmarks: ["Northern Westchester Hospital", "Saw Mill Parkway / Route 117"],
+    zipCodes: ["10549"],
+  },
+  {
+    slug: "mount-pleasant-ny",
+    name: "Mount Pleasant",
+    fullName: "Mount Pleasant, NY",
+    type: "town",
+    county: "Westchester County",
+    state: "NY",
+    metaTitle: "Dumpster Rental & Junk Removal in Mount Pleasant, NY | U.S. Carting",
+    metaDescription:
+      "Roll-off dumpsters and clean-out service in Mount Pleasant, NY — Valhalla, Hawthorne, Thornwood.",
+    intro:
+      "Mount Pleasant covers Valhalla, Hawthorne, and Thornwood — three of our regulars.",
+    neighborhoods: ["Valhalla", "Hawthorne", "Thornwood"],
+    landmarks: ["Westchester Medical Center", "Kensico Dam Plaza", "Sprain Brook Parkway"],
+    zipCodes: ["10532", "10594", "10595"],
+  },
+  {
+    slug: "new-castle-ny",
+    name: "New Castle",
+    fullName: "New Castle, NY",
+    type: "town",
+    county: "Westchester County",
+    state: "NY",
+    metaTitle: "Dumpster Rental & Junk Removal in New Castle, NY | U.S. Carting",
+    metaDescription:
+      "Same-day roll-off dumpsters and junk removal in New Castle — Chappaqua and Millwood.",
+    intro:
+      "New Castle covers Chappaqua and Millwood. Big-lot homes, plenty of room for any can size.",
+    neighborhoods: ["Chappaqua", "Millwood"],
+    landmarks: ["Chappaqua Train Station", "Saw Mill Parkway", "Bedford Road"],
+    zipCodes: ["10514", "10546"],
+  },
+  {
+    slug: "north-castle-ny",
+    name: "North Castle",
+    fullName: "North Castle, NY",
+    type: "town",
+    county: "Westchester County",
+    state: "NY",
+    metaTitle: "Dumpster Rental & Junk Removal in North Castle, NY | U.S. Carting",
+    metaDescription:
+      "Roll-off dumpsters and full-service junk removal in North Castle, NY — Armonk, North White Plains.",
+    intro:
+      "North Castle is mostly Armonk territory. Long driveways, big garages, room for a 20.",
+    neighborhoods: ["Armonk", "North White Plains", "Banksville"],
+    landmarks: ["IBM Headquarters", "Wampus Pond", "I-684 Exits 3–4"],
+    zipCodes: ["10504", "10603"],
+  },
+  {
+    slug: "north-salem-ny",
+    name: "North Salem",
+    fullName: "North Salem, NY",
+    type: "town",
+    county: "Westchester County",
+    state: "NY",
+    metaTitle: "Dumpster Rental & Junk Removal in North Salem, NY | U.S. Carting",
+    metaDescription:
+      "Same-day dumpster rentals and junk removal in North Salem, NY.",
+    intro:
+      "North Salem is horse country — big lots, lots of barn work and outbuilding clean-outs.",
+    neighborhoods: ["North Salem Village", "Croton Falls", "Purdys"],
+    landmarks: ["Hammond Museum", "Titicus Reservoir", "I-684 Exit 8"],
+    zipCodes: ["10560", "10518", "10578"],
+  },
+  {
+    slug: "lewisboro-ny",
+    name: "Lewisboro",
+    fullName: "Lewisboro, NY",
+    type: "town",
+    county: "Westchester County",
+    state: "NY",
+    metaTitle: "Dumpster Rental & Junk Removal in Lewisboro, NY | U.S. Carting",
+    metaDescription:
+      "Roll-off dumpsters and junk removal across Lewisboro, NY — Cross River, South Salem, Goldens Bridge, Vista.",
+    intro:
+      "Lewisboro is spread out — five hamlets across the town. We've worked all of them.",
+    neighborhoods: ["Cross River", "South Salem", "Goldens Bridge", "Vista", "Waccabuc"],
+    landmarks: ["Ward Pound Ridge Reservation", "Cross River Reservoir", "I-684"],
+    zipCodes: ["10518", "10526", "10527", "10590", "10597"],
+  },
+  {
+    slug: "pound-ridge-ny",
+    name: "Pound Ridge",
+    fullName: "Pound Ridge, NY",
+    type: "town",
+    county: "Westchester County",
+    state: "NY",
+    metaTitle: "Dumpster Rental & Junk Removal in Pound Ridge, NY | U.S. Carting",
+    metaDescription:
+      "Same-day roll-off rentals and junk removal in Pound Ridge, NY.",
+    intro:
+      "Pound Ridge is country-quiet and our trucks know how to keep it that way.",
+    neighborhoods: ["Pound Ridge Center", "Scotts Corners"],
+    landmarks: ["Ward Pound Ridge Reservation", "Pound Ridge Village"],
+    zipCodes: ["10576"],
+  },
+  {
+    slug: "somers-ny",
+    name: "Somers",
+    fullName: "Somers, NY",
+    type: "town",
+    county: "Westchester County",
+    state: "NY",
+    metaTitle: "Dumpster Rental & Junk Removal in Somers, NY | U.S. Carting",
+    metaDescription:
+      "Roll-off dumpsters and junk removal in Somers, NY — Lincolndale, Granite Springs, Heritage Hills.",
+    intro:
+      "Somers covers Lincolndale, Heritage Hills, and Granite Springs. Lots of downsizes and estate work.",
+    neighborhoods: ["Lincolndale", "Granite Springs", "Heritage Hills", "Somers Center"],
+    landmarks: ["Muscoot Farm", "Heritage Hills", "I-684 Exit 6"],
+    zipCodes: ["10589", "10527"],
+  },
+  {
+    slug: "yorktown-ny",
+    name: "Yorktown",
+    fullName: "Yorktown, NY",
+    type: "town",
+    county: "Westchester County",
+    state: "NY",
+    metaTitle: "Dumpster Rental & Junk Removal in Yorktown, NY | U.S. Carting",
+    metaDescription:
+      "Same-day roll-off dumpsters and junk removal in Yorktown, NY.",
+    intro:
+      "Yorktown's a clean-out town — lots of multi-decade homeowners ready to downsize.",
+    neighborhoods: ["Yorktown Heights", "Jefferson Valley", "Mohegan Lake", "Shrub Oak"],
+    landmarks: ["FDR State Park", "Jefferson Valley Mall", "Taconic State Parkway"],
+    zipCodes: ["10535", "10547", "10588", "10598"],
+  },
+  {
+    slug: "ossining-ny",
+    name: "Ossining",
+    fullName: "Ossining, NY",
+    type: "town",
+    county: "Westchester County",
+    state: "NY",
+    metaTitle: "Dumpster Rental & Junk Removal in Ossining, NY | U.S. Carting",
+    metaDescription:
+      "Roll-off dumpsters and junk removal across Ossining, NY.",
+    intro:
+      "Ossining is steep streets and old housing stock — we send the right truck for the route.",
+    neighborhoods: ["Downtown Ossining", "Crotonville", "Ryder Park"],
+    landmarks: ["Sing Sing", "Croton Aqueduct", "Route 9"],
+    zipCodes: ["10562"],
+  },
+  {
+    slug: "peekskill-ny",
+    name: "Peekskill",
+    fullName: "Peekskill, NY",
+    type: "city",
+    county: "Westchester County",
+    state: "NY",
+    metaTitle: "Dumpster Rental & Junk Removal in Peekskill, NY | U.S. Carting",
+    metaDescription:
+      "Same-day dumpsters and junk removal in Peekskill, NY.",
+    intro:
+      "Peekskill is on the Hudson — older homes, steeper streets. We bring the right size for the job and the road.",
+    neighborhoods: ["Downtown Peekskill", "Buchanan border"],
+    landmarks: ["Peekskill Riverfront", "Hudson Highlands", "Route 9"],
+    zipCodes: ["10566"],
+  },
+  {
+    slug: "cortlandt-ny",
+    name: "Cortlandt",
+    fullName: "Cortlandt, NY",
+    type: "town",
+    county: "Westchester County",
+    state: "NY",
+    metaTitle: "Dumpster Rental & Junk Removal in Cortlandt, NY | U.S. Carting",
+    metaDescription:
+      "Roll-off dumpsters and junk removal in Cortlandt, NY — Cortlandt Manor, Croton-on-Hudson, Verplanck.",
+    intro:
+      "Cortlandt covers Cortlandt Manor, Verplanck, and parts of Croton. We hit them all on the regular.",
+    neighborhoods: ["Cortlandt Manor", "Verplanck", "Buchanan border"],
+    landmarks: ["Steamboat Dock", "Bear Mountain Bridge", "Route 9A"],
+    zipCodes: ["10520", "10566", "10567"],
+  },
+
+  // ─────────────────────── EXPANSION: HARTFORD CO, CT ───────────────────────
+  {
+    slug: "hartford-ct",
+    name: "Hartford",
+    fullName: "Hartford, CT",
+    type: "city",
+    county: "Hartford County",
+    state: "CT",
+    metaTitle: "Dumpster Rental & Junk Removal in Hartford, CT | U.S. Carting",
+    metaDescription:
+      "Roll-off dumpsters and junk removal across Hartford, CT — Asylum Hill to South Green, West End to North End.",
+    intro:
+      "Hartford's a city of neighborhoods. We do clean-outs in Asylum Hill, walk-up haul-outs in Frog Hollow, and contractor cans in the West End.",
+    neighborhoods: ["Asylum Hill", "West End", "South End", "Frog Hollow", "Parkville", "North End", "South Green"],
+    landmarks: ["State Capitol", "Bushnell Park", "XL Center", "I-84 / I-91 junction"],
+    zipCodes: ["06105", "06106", "06112", "06114", "06120"],
+  },
+  {
+    slug: "west-hartford-ct",
+    name: "West Hartford",
+    fullName: "West Hartford, CT",
+    type: "town",
+    county: "Hartford County",
+    state: "CT",
+    metaTitle: "Dumpster Rental & Junk Removal in West Hartford, CT | U.S. Carting",
+    metaDescription:
+      "Same-day roll-off dumpsters and junk removal in West Hartford, CT.",
+    intro:
+      "West Hartford is one of the most renovation-active towns we serve. We bring the 15 and 20-yard cans for kitchen and basement gut-outs.",
+    neighborhoods: ["West Hartford Center", "Bishops Corner", "Elmwood", "Blue Back Square area"],
+    landmarks: ["Blue Back Square", "Reservoir No. 6", "I-84 Exits 41–43"],
+    zipCodes: ["06107", "06110", "06117", "06119"],
+  },
+  {
+    slug: "glastonbury-ct",
+    name: "Glastonbury",
+    fullName: "Glastonbury, CT",
+    type: "town",
+    county: "Hartford County",
+    state: "CT",
+    metaTitle: "Dumpster Rental & Junk Removal in Glastonbury, CT | U.S. Carting",
+    metaDescription:
+      "Roll-off dumpsters and junk removal in Glastonbury, CT.",
+    intro:
+      "Glastonbury is suburban country — long driveways, finished basements, room for any can size.",
+    neighborhoods: ["South Glastonbury", "East Glastonbury", "Glastonbury Center"],
+    landmarks: ["Connecticut River", "Riverfront Park", "Route 2 Exits 8–10"],
+    zipCodes: ["06033", "06073"],
+  },
+  {
+    slug: "manchester-ct",
+    name: "Manchester",
+    fullName: "Manchester, CT",
+    type: "town",
+    county: "Hartford County",
+    state: "CT",
+    metaTitle: "Dumpster Rental & Junk Removal in Manchester, CT | U.S. Carting",
+    metaDescription:
+      "Same-day roll-off rentals and junk removal in Manchester, CT.",
+    intro:
+      "Manchester's a busy clean-out town with a steady contractor demand. We support both.",
+    neighborhoods: ["Downtown Manchester", "Buckland", "Highland Park"],
+    landmarks: ["The Shoppes at Buckland Hills", "Center Springs Park", "I-84 / I-384"],
+    zipCodes: ["06040", "06042"],
+  },
+  {
+    slug: "farmington-ct",
+    name: "Farmington",
+    fullName: "Farmington, CT",
+    type: "town",
+    county: "Hartford County",
+    state: "CT",
+    metaTitle: "Dumpster Rental & Junk Removal in Farmington, CT | U.S. Carting",
+    metaDescription:
+      "Roll-off dumpsters and junk removal in Farmington, CT.",
+    intro:
+      "Farmington has older Colonial homes and newer corporate parks alike. We handle both.",
+    neighborhoods: ["Farmington Village", "Unionville", "Farmington Center"],
+    landmarks: ["Hill-Stead Museum", "Farmington Canal Heritage Trail", "I-84 Exits 39–40"],
+    zipCodes: ["06032", "06085"],
+  },
+  {
+    slug: "simsbury-ct",
+    name: "Simsbury",
+    fullName: "Simsbury, CT",
+    type: "town",
+    county: "Hartford County",
+    state: "CT",
+    metaTitle: "Dumpster Rental & Junk Removal in Simsbury, CT | U.S. Carting",
+    metaDescription:
+      "Same-day dumpster rentals and clean-outs in Simsbury, CT.",
+    intro:
+      "Simsbury's a steady mix of country lots and village streets. We size the truck to the road.",
+    neighborhoods: ["Simsbury Center", "West Simsbury", "Tariffville", "Weatogue"],
+    landmarks: ["Heublein Tower", "Simsbury Performing Arts Center", "Route 10"],
+    zipCodes: ["06070", "06081", "06092"],
+  },
+  {
+    slug: "avon-ct",
+    name: "Avon",
+    fullName: "Avon, CT",
+    type: "town",
+    county: "Hartford County",
+    state: "CT",
+    metaTitle: "Dumpster Rental & Junk Removal in Avon, CT | U.S. Carting",
+    metaDescription:
+      "Roll-off dumpsters and junk removal in Avon, CT.",
+    intro:
+      "Avon clean-outs run from country roads down by Talcott Mountain to denser Route 44 streets.",
+    neighborhoods: ["Avon Center", "Talcott Mountain area"],
+    landmarks: ["Heublein Tower (Talcott Mountain)", "Avon Old Farms School", "Route 44"],
+    zipCodes: ["06001"],
+  },
+
+  // ─────────────────────── EXPANSION: MIDDLESEX CO, CT ───────────────────────
+  {
+    slug: "middletown-ct",
+    name: "Middletown",
+    fullName: "Middletown, CT",
+    type: "city",
+    county: "Middlesex County",
+    state: "CT",
+    metaTitle: "Dumpster Rental & Junk Removal in Middletown, CT | U.S. Carting",
+    metaDescription:
+      "Roll-off dumpsters and full-service junk removal across Middletown, CT.",
+    intro:
+      "Middletown has Wesleyan students rotating yearly — we do unit clean-outs, plus residential work across the city.",
+    neighborhoods: ["Downtown Middletown", "North End", "Westfield", "Long Hill"],
+    landmarks: ["Wesleyan University", "Connecticut River", "Route 9"],
+    zipCodes: ["06457"],
+  },
+  {
+    slug: "old-saybrook-ct",
+    name: "Old Saybrook",
+    fullName: "Old Saybrook, CT",
+    type: "town",
+    county: "Middlesex County",
+    state: "CT",
+    metaTitle: "Dumpster Rental & Junk Removal in Old Saybrook, CT | U.S. Carting",
+    metaDescription:
+      "Same-day junk removal and dumpsters in Old Saybrook, CT.",
+    intro:
+      "Old Saybrook is beach-town territory — shore-house clean-outs and renovations are our weekly bread.",
+    neighborhoods: ["Saybrook Point", "Fenwick", "Old Saybrook Center"],
+    landmarks: ["Saybrook Point Marina", "Katharine Hepburn Cultural Arts Center", "I-95 Exits 67–68"],
+    zipCodes: ["06475"],
+  },
+  {
+    slug: "essex-ct",
+    name: "Essex",
+    fullName: "Essex, CT",
+    type: "town",
+    county: "Middlesex County",
+    state: "CT",
+    metaTitle: "Dumpster Rental & Junk Removal in Essex, CT | U.S. Carting",
+    metaDescription:
+      "Roll-off dumpsters and junk removal across Essex, CT.",
+    intro:
+      "Essex Village is tight, but we know how to position the can to keep the river view intact.",
+    neighborhoods: ["Essex Village", "Centerbrook", "Ivoryton"],
+    landmarks: ["Connecticut River Museum", "Essex Steam Train", "Route 9"],
+    zipCodes: ["06409", "06426", "06442"],
+  },
+
+  // ─────────────────────── EXPANSION: LITCHFIELD CO, CT ───────────────────────
+  {
+    slug: "torrington-ct",
+    name: "Torrington",
+    fullName: "Torrington, CT",
+    type: "city",
+    county: "Litchfield County",
+    state: "CT",
+    metaTitle: "Dumpster Rental & Junk Removal in Torrington, CT | U.S. Carting",
+    metaDescription:
+      "Roll-off dumpsters and full-service junk removal in Torrington, CT.",
+    intro:
+      "Torrington is the biggest city in Litchfield County and we serve it with same-day cans and full-service hauls.",
+    neighborhoods: ["Downtown Torrington", "Burrville", "East Torrington"],
+    landmarks: ["Warner Theatre", "Burr Pond State Park", "Route 8 Exit 44"],
+    zipCodes: ["06790"],
+  },
+  {
+    slug: "litchfield-ct",
+    name: "Litchfield",
+    fullName: "Litchfield, CT",
+    type: "town",
+    county: "Litchfield County",
+    state: "CT",
+    metaTitle: "Dumpster Rental & Junk Removal in Litchfield, CT | U.S. Carting",
+    metaDescription:
+      "Roll-off dumpsters and junk removal in Litchfield, CT.",
+    intro:
+      "Litchfield's historic homes deserve a careful crew. We deliver one.",
+    neighborhoods: ["Litchfield Center", "Bantam", "Northfield"],
+    landmarks: ["Litchfield Green", "White Memorial Conservation Center", "Route 202"],
+    zipCodes: ["06750", "06759"],
+  },
+  {
+    slug: "watertown-ct",
+    name: "Watertown",
+    fullName: "Watertown, CT",
+    type: "town",
+    county: "Litchfield County",
+    state: "CT",
+    metaTitle: "Dumpster Rental & Junk Removal in Watertown, CT | U.S. Carting",
+    metaDescription:
+      "Same-day roll-off dumpsters and clean-outs in Watertown, CT.",
+    intro:
+      "Watertown is a busy clean-out and renovation market and we cover it weekly.",
+    neighborhoods: ["Watertown Center", "Oakville"],
+    landmarks: ["Black Rock State Park", "Taft School", "Route 8 Exits 38–39"],
+    zipCodes: ["06779", "06795"],
+  },
+
+  // ─────────────────────── EXPANSION: NEW LONDON CO, CT ───────────────────────
+  {
+    slug: "mystic-ct",
+    name: "Mystic",
+    fullName: "Mystic, CT",
+    type: "village",
+    county: "New London County",
+    state: "CT",
+    metaTitle: "Dumpster Rental & Junk Removal in Mystic, CT | U.S. Carting",
+    metaDescription:
+      "Roll-off dumpsters and junk removal in Mystic, CT.",
+    intro:
+      "Mystic is shore-side and we work around the seasonal flow — discreet drops, careful placement.",
+    neighborhoods: ["Downtown Mystic", "Old Mystic"],
+    landmarks: ["Mystic Seaport", "Mystic Aquarium", "I-95 Exit 90"],
+    zipCodes: ["06355", "06372"],
+  },
+  {
+    slug: "stonington-ct",
+    name: "Stonington",
+    fullName: "Stonington, CT",
+    type: "town",
+    county: "New London County",
+    state: "CT",
+    metaTitle: "Dumpster Rental & Junk Removal in Stonington, CT | U.S. Carting",
+    metaDescription:
+      "Same-day dumpster rentals and junk removal in Stonington, CT.",
+    intro:
+      "Stonington has classic CT shore architecture — careful crew, careful placement.",
+    neighborhoods: ["Stonington Borough", "Pawcatuck", "Old Mystic"],
+    landmarks: ["Stonington Harbor", "DuBois Beach", "I-95 Exits 91–92"],
+    zipCodes: ["06378", "06379"],
+  },
+  {
+    slug: "groton-ct",
+    name: "Groton",
+    fullName: "Groton, CT",
+    type: "town",
+    county: "New London County",
+    state: "CT",
+    metaTitle: "Dumpster Rental & Junk Removal in Groton, CT | U.S. Carting",
+    metaDescription:
+      "Roll-off dumpsters and junk removal across Groton, CT.",
+    intro:
+      "Groton's a mix of military housing, single-family, and waterfront — we serve all of it.",
+    neighborhoods: ["Groton City", "Mystic (Groton side)", "Noank", "Poquonnock Bridge"],
+    landmarks: ["Submarine Force Museum", "Bluff Point State Park", "I-95 Exits 86–88"],
+    zipCodes: ["06340", "06355"],
+  },
+
+  // ─────────────────────── EXPANSION: FAIRFIELD DEEPER ───────────────────────
+  {
+    slug: "danbury-ct",
+    name: "Danbury",
+    fullName: "Danbury, CT",
+    type: "city",
+    county: "Fairfield County",
+    state: "CT",
+    metaTitle: "Dumpster Rental & Junk Removal in Danbury, CT | U.S. Carting",
+    metaDescription:
+      "Same-day roll-off rentals and full-service junk removal in Danbury, CT.",
+    intro:
+      "Danbury's the biggest city in northern Fairfield County. We do contractor cans, single-family clean-outs, and apartment turnovers across town.",
+    neighborhoods: ["Downtown Danbury", "Mill Plain", "Bear Mountain", "South End"],
+    landmarks: ["Danbury Fair Mall", "Tarrywile Park", "I-84 Exits 1–8"],
+    zipCodes: ["06810", "06811", "06813"],
+  },
+  {
+    slug: "newtown-ct",
+    name: "Newtown",
+    fullName: "Newtown, CT",
+    type: "town",
+    county: "Fairfield County",
+    state: "CT",
+    metaTitle: "Dumpster Rental & Junk Removal in Newtown, CT | U.S. Carting",
+    metaDescription:
+      "Roll-off dumpsters and junk removal in Newtown, CT — Sandy Hook to Hawleyville.",
+    intro:
+      "Newtown's a big town in area — Sandy Hook, Hawleyville, the borough. We cover it all.",
+    neighborhoods: ["Sandy Hook", "Hawleyville", "Botsford", "Newtown Borough"],
+    landmarks: ["Flagpole on Main Street", "Edmond Town Hall", "I-84 Exits 9–11"],
+    zipCodes: ["06470", "06482"],
+  },
+  {
+    slug: "monroe-ct",
+    name: "Monroe",
+    fullName: "Monroe, CT",
+    type: "town",
+    county: "Fairfield County",
+    state: "CT",
+    metaTitle: "Dumpster Rental & Junk Removal in Monroe, CT | U.S. Carting",
+    metaDescription:
+      "Same-day dumpster rentals and junk removal in Monroe, CT.",
+    intro:
+      "Monroe sits between Newtown and Trumbull and we run it weekly.",
+    neighborhoods: ["Stevenson", "Stepney", "Monroe Center"],
+    landmarks: ["Wolfe Park", "Webb Mountain Park", "Route 25 / Route 111"],
+    zipCodes: ["06468"],
+  },
+  {
+    slug: "brookfield-ct",
+    name: "Brookfield",
+    fullName: "Brookfield, CT",
+    type: "town",
+    county: "Fairfield County",
+    state: "CT",
+    metaTitle: "Dumpster Rental & Junk Removal in Brookfield, CT | U.S. Carting",
+    metaDescription:
+      "Roll-off dumpsters and junk removal in Brookfield, CT.",
+    intro:
+      "Brookfield is right on Lake Candlewood — we've done plenty of shore-house clean-outs here.",
+    neighborhoods: ["Brookfield Center", "Candlewood Lake area", "Stony Hill"],
+    landmarks: ["Candlewood Lake", "Brookfield Town Park", "Route 7 / I-84"],
+    zipCodes: ["06804"],
+  },
+
+  // ─────────────────────── EXPANSION: NEW HAVEN DEEPER ───────────────────────
+  {
+    slug: "branford-ct",
+    name: "Branford",
+    fullName: "Branford, CT",
+    type: "town",
+    county: "New Haven County",
+    state: "CT",
+    metaTitle: "Dumpster Rental & Junk Removal in Branford, CT | U.S. Carting",
+    metaDescription:
+      "Same-day roll-off dumpsters and junk removal in Branford, CT.",
+    intro:
+      "Branford's a shore town we serve weekly — shore-house clean-outs, basement haul-outs, and contractor cans.",
+    neighborhoods: ["Indian Neck", "Pine Orchard", "Stony Creek", "Branford Center"],
+    landmarks: ["Stony Creek Quarry", "Thimble Islands", "I-95 Exits 53–55"],
+    zipCodes: ["06405"],
+  },
+  {
+    slug: "hamden-ct",
+    name: "Hamden",
+    fullName: "Hamden, CT",
+    type: "town",
+    county: "New Haven County",
+    state: "CT",
+    metaTitle: "Dumpster Rental & Junk Removal in Hamden, CT | U.S. Carting",
+    metaDescription:
+      "Roll-off dumpsters and full-service junk removal in Hamden, CT.",
+    intro:
+      "Hamden is a long town — Whitneyville at one end, Mount Carmel at the other. We cover the whole stretch.",
+    neighborhoods: ["Whitneyville", "Spring Glen", "Centerville", "Mount Carmel"],
+    landmarks: ["Quinnipiac University", "Sleeping Giant State Park", "Route 10 / Wilbur Cross Parkway"],
+    zipCodes: ["06514", "06517", "06518"],
+  },
+  {
+    slug: "north-haven-ct",
+    name: "North Haven",
+    fullName: "North Haven, CT",
+    type: "town",
+    county: "New Haven County",
+    state: "CT",
+    metaTitle: "Dumpster Rental & Junk Removal in North Haven, CT | U.S. Carting",
+    metaDescription:
+      "Same-day dumpster rentals and junk removal in North Haven, CT.",
+    intro:
+      "North Haven is suburban with big lots — plenty of room for a 20 or 30-yard can.",
+    neighborhoods: ["North Haven Center", "Montowese"],
+    landmarks: ["Quinnipiac River", "North Haven Town Green", "I-91 Exits 9–12"],
+    zipCodes: ["06473"],
+  },
+  {
+    slug: "madison-ct",
+    name: "Madison",
+    fullName: "Madison, CT",
+    type: "town",
+    county: "New Haven County",
+    state: "CT",
+    metaTitle: "Dumpster Rental & Junk Removal in Madison, CT | U.S. Carting",
+    metaDescription:
+      "Roll-off dumpsters and junk removal in Madison, CT.",
+    intro:
+      "Madison is shore-side and we work shore hours when needed.",
+    neighborhoods: ["Madison Center", "Madison Beach"],
+    landmarks: ["Hammonasset Beach State Park", "Madison Green", "I-95 Exit 61"],
+    zipCodes: ["06443"],
+  },
+  {
+    slug: "guilford-ct",
+    name: "Guilford",
+    fullName: "Guilford, CT",
+    type: "town",
+    county: "New Haven County",
+    state: "CT",
+    metaTitle: "Dumpster Rental & Junk Removal in Guilford, CT | U.S. Carting",
+    metaDescription:
+      "Same-day roll-off dumpsters and junk removal in Guilford, CT.",
+    intro:
+      "Guilford Green and old historic homes — we deliver carefully and pick up clean.",
+    neighborhoods: ["Guilford Center", "Sachem's Head"],
+    landmarks: ["Guilford Green", "Henry Whitfield State Museum", "I-95 Exits 57–59"],
+    zipCodes: ["06437"],
+  },
+
+  // ─────────────────────── EXPANSION: WESTCHESTER NY DEEPER ───────────────────────
+  {
+    slug: "tarrytown-ny",
+    name: "Tarrytown",
+    fullName: "Tarrytown, NY",
+    type: "village",
+    county: "Westchester County",
+    state: "NY",
+    metaTitle: "Dumpster Rental & Junk Removal in Tarrytown, NY | U.S. Carting",
+    metaDescription:
+      "Roll-off dumpsters and full-service junk removal across Tarrytown, NY.",
+    intro:
+      "Tarrytown has older Hudson-side housing stock — we know how to navigate the hills.",
+    neighborhoods: ["Downtown Tarrytown", "Philipse Manor"],
+    landmarks: ["Lyndhurst Estate", "Tappan Zee Bridge", "Route 9 / I-87"],
+    zipCodes: ["10591"],
+  },
+  {
+    slug: "sleepy-hollow-ny",
+    name: "Sleepy Hollow",
+    fullName: "Sleepy Hollow, NY",
+    type: "village",
+    county: "Westchester County",
+    state: "NY",
+    metaTitle: "Dumpster Rental & Junk Removal in Sleepy Hollow, NY | U.S. Carting",
+    metaDescription:
+      "Same-day dumpster rentals and junk removal in Sleepy Hollow, NY.",
+    intro:
+      "Sleepy Hollow is just north of Tarrytown — we handle the steep streets and tight driveways.",
+    neighborhoods: ["Downtown Sleepy Hollow", "Beekman Avenue"],
+    landmarks: ["Old Dutch Church", "Kykuit", "Route 9"],
+    zipCodes: ["10591"],
+  },
+  {
+    slug: "dobbs-ferry-ny",
+    name: "Dobbs Ferry",
+    fullName: "Dobbs Ferry, NY",
+    type: "village",
+    county: "Westchester County",
+    state: "NY",
+    metaTitle: "Dumpster Rental & Junk Removal in Dobbs Ferry, NY | U.S. Carting",
+    metaDescription:
+      "Roll-off dumpsters and junk removal in Dobbs Ferry, NY.",
+    intro:
+      "Dobbs Ferry is a tight Rivertown village — we send the right truck for the streets.",
+    neighborhoods: ["Downtown Dobbs Ferry", "Ardsley Crossing"],
+    landmarks: ["Mercy College", "Wickers Creek Park", "Saw Mill Parkway"],
+    zipCodes: ["10522"],
+  },
+  {
+    slug: "larchmont-ny",
+    name: "Larchmont",
+    fullName: "Larchmont, NY",
+    type: "village",
+    county: "Westchester County",
+    state: "NY",
+    metaTitle: "Dumpster Rental & Junk Removal in Larchmont, NY | U.S. Carting",
+    metaDescription:
+      "Same-day dumpster rentals and junk removal in Larchmont, NY.",
+    intro:
+      "Larchmont's tight, gracious streets get a clean drop and a quiet pull from our crew.",
+    neighborhoods: ["Larchmont Village", "Larchmont Manor"],
+    landmarks: ["Manor Park", "Larchmont Train Station", "I-95 Exit 17"],
+    zipCodes: ["10538"],
+  },
+];
+
+export const COUNTIES = [
+  { name: "Fairfield County", state: "CT" },
+  { name: "New Haven County", state: "CT" },
+  { name: "Hartford County", state: "CT" },
+  { name: "Middlesex County", state: "CT" },
+  { name: "Litchfield County", state: "CT" },
+  { name: "New London County", state: "CT" },
+  { name: "Westchester County", state: "NY" },
+] as const;

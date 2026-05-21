@@ -1,0 +1,9 @@
+# *
+User-agent: *
+Allow: /
+
+# Host
+Host: https://www.uscarting.com
+
+# Sitemaps
+Sitemap: https://www.uscarting.com/sitemap.xml
