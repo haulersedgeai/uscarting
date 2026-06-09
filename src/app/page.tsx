@@ -13,6 +13,7 @@ import {
   MapPin,
   Building2,
   Home as HomeIcon,
+  Package,
 } from "lucide-react";
 import { Section, SectionHeader } from "@/components/Section";
 import { Container } from "@/components/Container";
@@ -87,20 +88,26 @@ export default function HomePage() {
       <Section>
         <SectionHeader
           eyebrow="What we do"
-          title="Five trucks. 104 dumpsters. One phone number."
-          description="Whether you need a roll-off dropped today or a crew to clear out a basement, we run both sides of the operation under one roof."
+          title="Five services, one operation."
+          description="Five trucks and 104 dumpsters out of a single Greenwich depot. Roll-offs, bags, full-service hauling, clean-outs, and outbuilding demo — all dispatched off one phone line."
         />
-        <div className="mt-12 grid gap-5 md:grid-cols-2 lg:grid-cols-4">
+        <div className="mt-12 grid gap-5 md:grid-cols-2 lg:grid-cols-5">
           <FeatureCard
             icon={<Truck size={28} />}
             title="Roll-Off Rentals"
-            description="10, 15, 20, and 30/40-yard cans. 7-day rental, weight included."
+            description="10–40 yard cans, flat $447–$899, weight included. 7-day window."
             href="/dumpster-sizes"
+          />
+          <FeatureCard
+            icon={<Package size={28} />}
+            title="Carting Bag"
+            description="8-yard dumpster bag at $299 flat. No rental clock. Drop, fill, call."
+            href="/carting-bag"
           />
           <FeatureCard
             icon={<Trash2 size={28} />}
             title="Junk Removal"
-            description="Full-service. We load, haul, and recycle. All-in pricing."
+            description="Truck-space pricing from $145 minimum to $795 packed truck."
             href="/services/junk-removal"
           />
           <FeatureCard
@@ -111,8 +118,8 @@ export default function HomePage() {
           />
           <FeatureCard
             icon={<Hammer size={28} />}
-            title="Demo & Construction"
-            description="Light demo and contractor debris. Net-30 for repeat clients."
+            title="Outbuilding Demo"
+            description="Sheds, decks, hot tubs, pools, fences from $400. Demo + haul."
             href="/services/light-demolition"
           />
         </div>

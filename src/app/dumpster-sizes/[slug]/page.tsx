@@ -8,7 +8,7 @@ import { Section, SectionHeader } from "@/components/Section";
 import { CtaBanner } from "@/components/CtaBanner";
 import { QuoteFormEmbed } from "@/components/QuoteFormEmbed";
 import { FaqAccordion } from "@/components/Accordion";
-import { FaqJsonLd, BreadcrumbJsonLd } from "@/components/JsonLd";
+import { FaqJsonLd, BreadcrumbJsonLd, ProductJsonLd } from "@/components/JsonLd";
 import { DUMPSTER_SIZES } from "@/content/dumpster-sizes";
 import { SIZE_FAQS } from "@/content/faqs";
 import { SITE } from "@/lib/site";
@@ -45,7 +45,7 @@ export default async function DumpsterSizePage({
 
   return (
     <>
-      <PageHero eyebrow={`${d.cubicYards} cubic yards`} title={d.h1} description={d.intro} />
+      <PageHero eyebrow={`${d.cubicYards} cubic yards · $${d.price} flat`} title={d.h1} description={d.intro} />
 
       <Section>
         <div className="grid gap-10 lg:grid-cols-[1.2fr_1fr]">
@@ -60,16 +60,34 @@ export default async function DumpsterSizePage({
               />
             </div>
 
+            <div className="mt-10 rounded-2xl border border-[var(--color-line)] bg-white p-6 flex items-center justify-between gap-6 flex-wrap">
+              <div>
+                <div className="text-xs uppercase tracking-wider text-[var(--color-steel-soft)] font-bold mb-1">
+                  Flat rental rate
+                </div>
+                <div className="text-4xl md:text-5xl font-extrabold text-[var(--color-ink)]">
+                  ${d.price}
+                  <span className="text-base font-bold text-[var(--color-steel)]"> / rental</span>
+                </div>
+                <div className="text-sm text-[var(--color-steel)] mt-1">
+                  Includes drop-off, pickup, dumping, {d.weightLimit.toLowerCase()}, and a {d.rentalPeriod.toLowerCase().replace(" included", "")} window.
+                </div>
+              </div>
+              <Link href="/get-a-quote?kind=dumpster" className="btn-primary">
+                Reserve this size <ArrowRight size={16} />
+              </Link>
+            </div>
+
             <h2 className="mt-10 text-2xl md:text-3xl font-extrabold text-[var(--color-ink)] mb-5">
               Specs
             </h2>
             <div className="grid grid-cols-2 gap-x-4 gap-y-5">
+              <Spec label="Flat price" value={`$${d.price}`} />
               <Spec label="Capacity" value={`${d.cubicYards} cubic yards`} />
               <Spec label="Dimensions" value={d.dimensions} />
               <Spec label="Weight included" value={d.weightLimit} />
               <Spec label="Rental period" value={d.rentalPeriod} />
-              <Spec label="Equivalent" value={d.whatFits[0]} />
-              <Spec label="Bag capacity" value={d.whatFits[1] ?? "—"} />
+              <Spec label="Overage" value="$0.10 per pound over included weight" />
             </div>
 
             <h2 className="mt-12 text-2xl md:text-3xl font-extrabold text-[var(--color-ink)] mb-5">
@@ -129,25 +147,27 @@ export default async function DumpsterSizePage({
           <aside className="lg:sticky lg:top-24 self-start">
             <div className="rounded-2xl bg-[var(--color-ink)] text-white p-6">
               <div className="text-xs uppercase tracking-wider text-[var(--color-orange)] font-bold mb-2">
-                Get a quote
+                Reserve now
               </div>
-              <h3 className="font-extrabold text-2xl mb-2">{d.size} Dumpster</h3>
+              <h3 className="font-extrabold text-2xl mb-1">{d.size} Dumpster</h3>
+              <div className="text-3xl font-extrabold text-[var(--color-orange)] mb-3">${d.price}</div>
               <p className="text-sm text-white/75 mb-5">
-                {d.weightLimit} • {d.rentalPeriod} • Same-day in most areas.
+                Flat rate. {d.weightLimit} · {d.rentalPeriod} · Greenwich-based, same-day in most of Fairfield County and Westchester.
               </p>
               <Link href="/get-a-quote?kind=dumpster" className="btn-primary w-full">
-                Get A Free Quote <ArrowRight size={16} />
+                Book this can <ArrowRight size={16} />
               </Link>
               <a href={SITE.phoneTel} className="mt-3 flex items-center justify-center gap-2 w-full text-white font-bold border border-white/20 rounded-lg py-3.5 hover:bg-white/10">
                 <Phone size={16} /> {SITE.phone}
               </a>
             </div>
             <div className="mt-4 rounded-2xl bg-[var(--color-surface)] p-6">
-              <h4 className="font-bold mb-3 text-[var(--color-ink)]">Tips for this size</h4>
+              <h4 className="font-bold mb-3 text-[var(--color-ink)]">Notes on this size</h4>
               <ul className="text-sm text-[var(--color-steel)] space-y-2">
-                <li>· Park on the driveway when possible — we'll use boards.</li>
-                <li>· Need street placement? Most towns require a permit; we'll point you to the right office.</li>
-                <li>· Going over weight? You'll see the ticket and the math before you pay.</li>
+                <li>· Driveway drops are free. Street placement may need a town permit — ask us where to apply.</li>
+                <li>· Overage runs $0.10 per pound past the included weight. You see the scale ticket.</li>
+                <li>· Extra days run $15 each beyond the 7-day window.</li>
+                <li>· Delivered out of our Greenwich depot at 37 S Water St.</li>
               </ul>
             </div>
           </aside>
@@ -195,6 +215,14 @@ export default async function DumpsterSizePage({
       ) : null}
 
       {faqs.length > 0 ? <FaqJsonLd items={faqs} /> : null}
+      <ProductJsonLd
+        name={`${d.size} Roll-Off Dumpster Rental`}
+        description={d.metaDescription}
+        url={`/dumpster-sizes/${d.slug}`}
+        price={d.price}
+        image={d.image}
+        sku={`USC-${d.slug.toUpperCase()}`}
+      />
       <BreadcrumbJsonLd
         items={[
           { name: "Home", path: "/" },

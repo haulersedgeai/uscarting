@@ -19,6 +19,7 @@ export type DumpsterSize = {
   h1: string;
   metaTitle: string;
   metaDescription: string;
+  price: number;
   cubicYards: number;
   dimensions: string;
   weightLimit: string;

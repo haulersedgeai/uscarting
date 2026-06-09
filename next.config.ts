@@ -9,7 +9,9 @@ const LEGACY_REDIRECTS = [
   { source: "/services-1", destination: "/services" },
   { source: "/dumpster-rental", destination: "/dumpster-sizes" },
   { source: "/junk-removal", destination: "/services/junk-removal" },
-  { source: "/grizzly-bags", destination: "/services/grizzly-bags" },
+  { source: "/grizzly-bags", destination: "/carting-bag" },
+  { source: "/services/grizzly-bags", destination: "/carting-bag" },
+  { source: "/services/carting-bag", destination: "/carting-bag" },
   { source: "/instant-dumpster-quote", destination: "/get-a-quote?kind=dumpster" },
   { source: "/junk-quote", destination: "/get-a-quote?kind=junk" },
 ] as const;

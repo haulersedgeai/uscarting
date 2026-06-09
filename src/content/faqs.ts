@@ -234,7 +234,7 @@ export const FAQ_CATEGORIES: FaqCategory[] = [
       },
       {
         q: "Who is the owner?",
-        a: "U.S. Carting is independently owned and operated. The same ownership also operates Grizzly Junk Pros in other markets — but the two companies run with separate teams, dispatch, fleets, and customer service. U.S. Carting's focus is exclusively Fairfield County and Westchester.",
+        a: "U.S. Carting is independently owned and operated out of Greenwich, CT. We run our own trucks, our own dispatch, and our own crews. Ownership disclosure and other corporate detail is on our /about page.",
       },
     ],
   },
@@ -250,16 +250,20 @@ export const FAQ_TOTAL_COUNT = FAQ_CATEGORIES.reduce(
 export const SIZE_FAQS: Record<string, Faq[]> = {
   "10-yard-dumpster": [
     {
+      q: "How much does the 10-yard cost?",
+      a: "$447 flat. That covers drop, pickup, dumping, the 1,000-lb weight allowance, and 7 days of rental. Overage past the included weight is $0.10 per pound and you'll see the scale ticket. Extra days run $15 each.",
+    },
+    {
       q: "What fits in a 10 yard dumpster?",
-      a: "Roughly 4 pickup-truck loads or 60 large contractor trash bags. A 10-yard handles a single-room renovation, a small bathroom gut, a garage purge, or a roof tear-off up to about 15 squares.",
+      a: "About 3 pickup-truck loads or roughly 60 contractor trash bags. It handles a single-room renovation, a small bathroom gut, a one-car garage purge, or a roof tear-off up to about 15 squares.",
     },
     {
       q: "How big is a 10 yard dumpster?",
-      a: "Approximately 12 ft long × 8 ft wide × 3.5 ft high. It fits on most residential driveways without blocking a second car.",
+      a: "14 ft long × 7.5 ft wide × 3.5 ft high. It fits on most residential driveways without blocking a second car.",
     },
     {
       q: "What's the weight limit on a 10 yard dumpster?",
-      a: "1,000 lbs included in the rental price. Overage is billed at the transfer-station per-ton rate — you see the scale ticket. The 10-yard is the right pick for heavy materials like concrete, dirt, or asphalt, where weight hits before volume does.",
+      a: "1,000 lbs (½ ton) included. Past that, overage runs $0.10 per pound and we hand you the transfer-station scale ticket. The 10 is the right pick for dense materials like concrete, dirt, or asphalt — those hit weight before they fill a bigger can.",
     },
     {
       q: "Is a 10 yard too small for a kitchen remodel?",
@@ -272,16 +276,20 @@ export const SIZE_FAQS: Record<string, Faq[]> = {
   ],
   "15-yard-dumpster": [
     {
+      q: "How much does the 15-yard cost?",
+      a: "$547 flat. Includes the drop, pickup, dumping, 2,000-lb weight allowance, and a 7-day window. Overage runs $0.10 per pound and additional days are $15 each.",
+    },
+    {
       q: "What fits in a 15 yard dumpster?",
-      a: "Roughly 6 pickup-truck loads or 90 large contractor trash bags. It's sized for mid-range remodels — a full kitchen, a finished basement, a two-room renovation, or a mid-size roofing job.",
+      a: "Roughly 4–5 pickup-truck loads or about 90 contractor trash bags. It's sized for mid-range remodels — a full kitchen with cabinets and countertops, a finished basement, a two-room renovation, or a roof in the 25–40 square range.",
     },
     {
       q: "How big is a 15 yard dumpster?",
-      a: "Approximately 14 ft long × 8 ft wide × 4.5 ft high. Similar footprint to the 10-yard but with taller walls, so it still fits most driveways.",
+      a: "16 ft long × 7.5 ft wide × 4.5 ft high. Slightly longer than the 10 with taller walls — still fits most residential driveways.",
     },
     {
       q: "What's the weight limit on a 15 yard dumpster?",
-      a: "2,000 lbs included. The 15 is our most-rented can because the weight allowance covers mixed loads — drywall, lumber, household clutter — without pushing you into overage.",
+      a: "2,000 lbs (1 ton) included. It's our most-rented can because the weight allowance covers mixed renovation loads — drywall, lumber, household clutter — without tripping into overage.",
     },
     {
       q: "Is a 15 yard big enough for a basement cleanout?",
@@ -294,16 +302,20 @@ export const SIZE_FAQS: Record<string, Faq[]> = {
   ],
   "20-yard-dumpster": [
     {
+      q: "How much does the 20-yard cost?",
+      a: "$647 flat. The price wraps in delivery, pickup, dumping, the 4,000-lb weight allowance, and a 7-day window. Overage is $0.10 per pound and extra days run $15 each.",
+    },
+    {
       q: "What fits in a 20 yard dumpster?",
-      a: "Roughly 8 pickup-truck loads or 120 large contractor trash bags. A 20-yard handles a whole-home renovation, a single-family estate clean-out, a roof up to about 30 squares, or a multi-room flooring tear-out.",
+      a: "About 6 pickup-truck loads or roughly 120 contractor trash bags. The 20 handles a whole-floor renovation, a single-family estate clear-out, an addition's framing waste, or a pool-and-deck removal.",
     },
     {
       q: "How big is a 20 yard dumpster?",
-      a: "Approximately 16 ft long × 8 ft wide × 4.5 ft high. The footprint is longer than a 10 or 15, so check the driveway length before booking — you need about 22 feet of straight space.",
+      a: "22 ft long × 7.5 ft wide × 6 ft high. The walls are taller than the 10 or 15, so light bulky material packs in fast. Check that you have ~28 feet of straight driveway space for delivery.",
     },
     {
       q: "What's the weight limit on a 20 yard dumpster?",
-      a: "4,000 lbs included. That covers mixed demolition and household debris for most whole-house projects without overage.",
+      a: "4,000 lbs (2 tons) included. That covers mixed demo and household debris for most whole-floor projects without overage. Concrete-heavy loads still belong in the 10.",
     },
     {
       q: "Is a 20 yard dumpster too big for my driveway?",
@@ -316,16 +328,20 @@ export const SIZE_FAQS: Record<string, Faq[]> = {
   ],
   "30-40-yard-dumpster": [
     {
+      q: "How much does the 30/40-yard cost?",
+      a: "$899 flat. That's a two-can setup with 6,000 lbs of total weight included, a 7-day window from first drop to last pickup, dumping, and full hauling. Overage is $0.10 per pound across both cans.",
+    },
+    {
       q: "What fits in a 30 yard dumpster?",
-      a: "Roughly 12 pickup-truck loads or 180 large contractor trash bags. A 30 handles whole-property clean-outs, major demolition, large new-build debris, or two layers of roofing on a large home.",
+      a: "Roughly 12 pickup-truck loads or about 180 contractor trash bags between the two cans. The 30/40 handles whole-property estate clear-outs, commercial decommissions, major light demo, or two layers of roof tear-off on a larger home.",
     },
     {
       q: "How big is a 30 yard dumpster?",
-      a: "Approximately 22 ft long × 8 ft wide × 6 ft high. The high walls mean light bulky materials — siding, cabinets, insulation, framing — pack in fast. You need about 30 feet of driveway clearance.",
+      a: "Two cans, each 22 ft long × 7.5 ft wide × 6 ft high. The high walls mean light bulky material — siding, cabinets, insulation, framing — packs in fast. Each drop needs about 28 feet of clear driveway.",
     },
     {
       q: "What's the weight limit on a 30 yard dumpster?",
-      a: "6,000 lbs included. That covers light-but-bulky construction loads cleanly. For concrete-heavy or dirt-heavy work, the 10-yard is still the right tool — those materials hit weight before they fill volume.",
+      a: "6,000 lbs (3 tons) across both cans. That covers light-but-bulky construction loads cleanly. For concrete- or shingle-heavy work, the 10-yard is still the right tool — dense materials hit weight before they fill volume.",
     },
     {
       q: "When should I rent a 30 or 40 yard dumpster?",
@@ -619,18 +635,38 @@ export const EXTRA_SERVICE_FAQS: Record<string, Faq[]> = {
       a: "Yes — final-walk protection removal is part of standard renovation cleanup.",
     },
   ],
-  "grizzly-bags": [
+  "carting-bag": [
     {
-      q: "How does Grizzly Bags differ from a roll-off?",
-      a: "No rental clock and no driveway commitment. You buy the bag, fill it on your timeline, then email us to grab it. Bags hold roughly the same as a 3-yard mini-can.",
+      q: "What is the Carting Bag?",
+      a: "It's an 8-cubic-yard flexible dumpster bag we drop at your address. You fill it on your own clock — no rental window — and call us when it's ready for pickup. One flat price, $299, with delivery and collection bundled in.",
     },
     {
-      q: "Where can I get a Grizzly Bag?",
-      a: "We can ship one to you, or you can pick one up from our Greenwich office. Local hardware partners sometimes stock them too — call for the current list.",
+      q: "How is the Carting Bag different from a roll-off dumpster?",
+      a: "No rental clock and a much smaller footprint. A 10-yard roll-off needs about 14 feet of clear driveway and the meter starts running on day one. The bag sits in a parking spot or alongside a walkway, doesn't tick down a rental period, and folds up when it's empty.",
     },
     {
-      q: "What can I put in a Grizzly Bag?",
-      a: "Same rules as a roll-off — no hazardous waste, no tires, no batteries. Construction debris, household trash, yard waste are all fine.",
+      q: "How much does the Carting Bag cost?",
+      a: "$299 flat. That's delivery, the bag itself, and pickup — all wrapped in. There are no daily fees, no fuel surcharges, and no rental-window penalty if you take a week or a month to fill it.",
+    },
+    {
+      q: "What can I put in the Carting Bag?",
+      a: "Household goods, furniture, mattresses, small appliances, electronics, light renovation debris (cabinetry scraps, drywall pieces, baseboard). Heavy material like concrete, brick, dirt, roofing shingles, sod, and tree limbs need to go in a roll-off instead.",
+    },
+    {
+      q: "How big is the Carting Bag?",
+      a: "8 cubic yards of capacity — roughly equivalent to our 10-yard roll-off in volume, with a softer footprint. Fits in a single parking spot, a tight driveway, or the side of a townhouse.",
+    },
+    {
+      q: "When is the Carting Bag the right call?",
+      a: "When the project is staged over weeks, when the driveway can't hold a roll-off, or when the load is small enough that a full dumpster is overkill. Common picks: tight-driveway homes, multi-family unit turnovers, slow-roll basement purges.",
+    },
+    {
+      q: "What if I put the wrong stuff in?",
+      a: "If we arrive and find prohibited items (paint, propane, batteries, chemicals), there's a $95 trip charge and we'll leave the bag for you to remove the items. Email us at info@uscarting.com first if you're not sure — we'd rather flag it ahead than charge a trip fee.",
+    },
+    {
+      q: "How fast can you drop a Carting Bag?",
+      a: "Most days within 1–2 business days from booking. Greenwich and lower Fairfield are usually same- or next-day; Westchester is next-day in most cases.",
     },
   ],
   "hotel-cleanouts": [

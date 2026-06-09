@@ -24,11 +24,13 @@ const NAV = [
     label: "Dumpster Sizes",
     href: "/dumpster-sizes",
     children: [
-      { label: "10 Yard Dumpster", href: "/dumpster-sizes/10-yard-dumpster" },
-      { label: "15 Yard Dumpster", href: "/dumpster-sizes/15-yard-dumpster" },
-      { label: "20 Yard Dumpster", href: "/dumpster-sizes/20-yard-dumpster" },
-      { label: "30 & 40 Yard Dumpster", href: "/dumpster-sizes/30-40-yard-dumpster" },
+      { label: "10 Yard Dumpster — $447", href: "/dumpster-sizes/10-yard-dumpster" },
+      { label: "15 Yard Dumpster — $547", href: "/dumpster-sizes/15-yard-dumpster" },
+      { label: "20 Yard Dumpster — $647", href: "/dumpster-sizes/20-yard-dumpster" },
+      { label: "30 & 40 Yard Dumpster — $899", href: "/dumpster-sizes/30-40-yard-dumpster" },
+      { label: "Carting Bag — $299", href: "/carting-bag" },
       { label: "What Fits in Each Size →", href: "/what-fits" },
+      { label: "See full pricing →", href: "/pricing" },
     ],
   },
   {

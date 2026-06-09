@@ -28,7 +28,6 @@ const RESIDENTIAL_SLUGS = [
   "hot-tub-removal",
   "shed-demolition",
   "e-waste-recycling",
-  "grizzly-bags",
 ];
 
 export default function ResidentialPage() {
@@ -58,6 +57,16 @@ export default function ResidentialPage() {
               </div>
             </Link>
           ))}
+          <Link
+            href="/carting-bag"
+            className="group rounded-2xl bg-white border border-[var(--color-line)] p-6 hover:border-[var(--color-orange)] hover:shadow-md transition-all"
+          >
+            <h3 className="font-bold text-lg text-[var(--color-ink)] mb-2">Carting Bag — 8-Yard Dumpster Bag</h3>
+            <p className="text-sm text-[var(--color-steel)] line-clamp-3">$299 flat. Drop, fill on your own clock, call when ready. Sized for tight driveways and slow-roll projects.</p>
+            <div className="mt-4 text-sm font-bold text-[var(--color-orange)] inline-flex items-center gap-1 group-hover:gap-2 transition-all">
+              See the Carting Bag <ArrowRight size={14} />
+            </div>
+          </Link>
         </div>
       </Section>
 

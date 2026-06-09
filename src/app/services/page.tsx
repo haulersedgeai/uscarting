@@ -27,6 +27,7 @@ export default function ServicesPage() {
       {categories.map((cat) => {
         const items = SERVICES.filter((s) => s.category === cat);
         if (items.length === 0) return null;
+        const showBagCard = cat === "specialty";
         return (
           <Section key={cat} bg={cat === "junk" || cat === "demolition" ? "soft" : "default"}>
             <SectionHeader eyebrow={cat.replace("_", " ")} title={SERVICE_CATEGORIES[cat]} />
@@ -44,6 +45,18 @@ export default function ServicesPage() {
                   </div>
                 </Link>
               ))}
+              {showBagCard ? (
+                <Link
+                  href="/carting-bag"
+                  className="group rounded-2xl bg-white border border-[var(--color-line)] p-6 hover:border-[var(--color-orange)] hover:shadow-md transition-all"
+                >
+                  <h3 className="font-bold text-lg text-[var(--color-ink)] mb-2">Carting Bag — 8-Yard Dumpster Bag</h3>
+                  <p className="text-sm text-[var(--color-steel)] leading-relaxed line-clamp-3">$299 flat — drop, fill on your own clock, call when ready. Right size when a roll-off is overkill.</p>
+                  <div className="mt-4 text-sm font-bold text-[var(--color-orange)] inline-flex items-center gap-1 group-hover:gap-2 transition-all">
+                    See the Carting Bag <ArrowRight size={14} />
+                  </div>
+                </Link>
+              ) : null}
             </div>
           </Section>
         );

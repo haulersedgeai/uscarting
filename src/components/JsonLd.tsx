@@ -45,6 +45,79 @@ export function BreadcrumbJsonLd({
   });
 }
 
+export function ProductJsonLd({
+  name,
+  description,
+  url,
+  price,
+  image,
+  sku,
+  priceCurrency = "USD",
+  itemCondition = "https://schema.org/NewCondition",
+  availability = "https://schema.org/InStock",
+}: {
+  name: string;
+  description: string;
+  url: string;
+  price: number;
+  image?: string;
+  sku?: string;
+  priceCurrency?: string;
+  itemCondition?: string;
+  availability?: string;
+}) {
+  return emit({
+    "@context": "https://schema.org",
+    "@type": "Product",
+    name,
+    description,
+    sku: sku ?? name,
+    image: image ? `${SITE.url}${image}` : undefined,
+    brand: { "@type": "Brand", name: "U.S. Carting" },
+    offers: {
+      "@type": "Offer",
+      url: `${SITE.url}${url}`,
+      priceCurrency,
+      price,
+      availability,
+      itemCondition,
+      seller: { "@id": `${SITE.url}#business` },
+    },
+  });
+}
+
+export function PriceRangeJsonLd({
+  name,
+  description,
+  url,
+  lowPrice,
+  highPrice,
+  priceCurrency = "USD",
+}: {
+  name: string;
+  description: string;
+  url: string;
+  lowPrice: number;
+  highPrice: number;
+  priceCurrency?: string;
+}) {
+  return emit({
+    "@context": "https://schema.org",
+    "@type": "Service",
+    name,
+    description,
+    url: `${SITE.url}${url}`,
+    provider: { "@id": `${SITE.url}#business` },
+    offers: {
+      "@type": "AggregateOffer",
+      priceCurrency,
+      lowPrice,
+      highPrice,
+      offerCount: 5,
+    },
+  });
+}
+
 export function ServiceJsonLd({
   name,
   description,
