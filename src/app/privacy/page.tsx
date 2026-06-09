@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { PageHero } from "@/components/PageHero";
 import { Section } from "@/components/Section";
+import { BreadcrumbJsonLd } from "@/components/JsonLd";
 
 export const metadata: Metadata = {
   title: "Privacy Policy",
@@ -38,6 +39,12 @@ export default function PrivacyPage() {
           <p>Questions? Email info@uscarting.com or call (917) 664-4794.</p>
         </div>
       </Section>
+          <BreadcrumbJsonLd
+        items={[
+          { name: "Home", path: "/" },
+          { name: "Privacy", path: "/privacy" },
+        ]}
+      />
     </>
   );
 }

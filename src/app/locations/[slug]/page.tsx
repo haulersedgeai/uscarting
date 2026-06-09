@@ -6,9 +6,12 @@ import { PageHero } from "@/components/PageHero";
 import { Section, SectionHeader } from "@/components/Section";
 import { CtaBanner } from "@/components/CtaBanner";
 import { QuoteFormEmbed } from "@/components/QuoteFormEmbed";
+import { FaqAccordion } from "@/components/Accordion";
+import { FaqJsonLd, BreadcrumbJsonLd } from "@/components/JsonLd";
 import { LOCATIONS } from "@/content/locations";
 import { DUMPSTER_SIZES } from "@/content/dumpster-sizes";
 import { SERVICES } from "@/content/services";
+import { buildLocationFaqs } from "@/content/faqs";
 import { SITE } from "@/lib/site";
 
 export function generateStaticParams() {
@@ -40,6 +43,7 @@ export default async function LocationPage({
   ).slice(0, 8);
 
   const featuredServices = SERVICES.slice(0, 6);
+  const faqs = buildLocationFaqs(loc);
 
   return (
     <>
@@ -169,8 +173,18 @@ export default async function LocationPage({
         </div>
       </Section>
 
+      <Section>
+        <SectionHeader
+          eyebrow="Common questions"
+          title={`Dumpster rental & junk removal in ${loc.name} — FAQ`}
+        />
+        <div className="mt-10 max-w-3xl">
+          <FaqAccordion items={faqs} />
+        </div>
+      </Section>
+
       {others.length > 0 ? (
-        <Section>
+        <Section bg="soft">
           <SectionHeader eyebrow="Nearby" title={`Other ${loc.county} towns we serve`} />
           <div className="mt-10 grid gap-3 sm:grid-cols-2 lg:grid-cols-4">
             {others.map((o) => (
@@ -194,6 +208,14 @@ export default async function LocationPage({
         </Section>
       ) : null}
 
+      <FaqJsonLd items={faqs} />
+      <BreadcrumbJsonLd
+        items={[
+          { name: "Home", path: "/" },
+          { name: "Locations", path: "/locations" },
+          { name: `${loc.name}, ${loc.state}`, path: `/locations/${loc.slug}` },
+        ]}
+      />
       <CtaBanner />
     </>
   );

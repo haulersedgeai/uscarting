@@ -3,6 +3,7 @@ import { X } from "lucide-react";
 import { PageHero } from "@/components/PageHero";
 import { Section, SectionHeader } from "@/components/Section";
 import { CtaBanner } from "@/components/CtaBanner";
+import { BreadcrumbJsonLd } from "@/components/JsonLd";
 
 export const metadata: Metadata = {
   title: "Prohibited Materials — What We Can't Take",
@@ -89,6 +90,12 @@ export default function ProhibitedMaterialsPage() {
       </Section>
 
       <CtaBanner />
+          <BreadcrumbJsonLd
+        items={[
+          { name: "Home", path: "/" },
+          { name: "Prohibited Materials", path: "/prohibited-materials" },
+        ]}
+      />
     </>
   );
 }

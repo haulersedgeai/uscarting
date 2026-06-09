@@ -3,6 +3,7 @@ import { ShieldCheck, Recycle, Clock, DollarSign, Phone, Users, Truck, Trash2 } 
 import { PageHero } from "@/components/PageHero";
 import { Section, SectionHeader } from "@/components/Section";
 import { CtaBanner } from "@/components/CtaBanner";
+import { BreadcrumbJsonLd } from "@/components/JsonLd";
 
 export const metadata: Metadata = {
   title: "Why Choose U.S. Carting — The Differences That Matter",
@@ -88,6 +89,12 @@ export default function WhyChooseUsPage() {
       </Section>
 
       <CtaBanner />
+          <BreadcrumbJsonLd
+        items={[
+          { name: "Home", path: "/" },
+          { name: "Why Choose Us", path: "/why-choose-us" },
+        ]}
+      />
     </>
   );
 }

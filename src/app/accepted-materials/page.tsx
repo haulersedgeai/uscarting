@@ -3,6 +3,7 @@ import { Check } from "lucide-react";
 import { PageHero } from "@/components/PageHero";
 import { Section, SectionHeader } from "@/components/Section";
 import { CtaBanner } from "@/components/CtaBanner";
+import { BreadcrumbJsonLd } from "@/components/JsonLd";
 
 export const metadata: Metadata = {
   title: "Accepted Materials — What Goes In The Dumpster",
@@ -117,6 +118,12 @@ export default function AcceptedMaterialsPage() {
       </Section>
 
       <CtaBanner />
+          <BreadcrumbJsonLd
+        items={[
+          { name: "Home", path: "/" },
+          { name: "Accepted Materials", path: "/accepted-materials" },
+        ]}
+      />
     </>
   );
 }

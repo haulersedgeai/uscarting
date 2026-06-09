@@ -17,33 +17,11 @@ import {
 import { Section, SectionHeader } from "@/components/Section";
 import { Container } from "@/components/Container";
 import { CtaBanner } from "@/components/CtaBanner";
-import { FaqAccordion } from "@/components/Accordion";
+import { FaqJsonLd } from "@/components/JsonLd";
 import { SITE } from "@/lib/site";
 import { DUMPSTER_SIZES } from "@/content/dumpster-sizes";
 import { LOCATIONS } from "@/content/locations";
-
-const FAQS = [
-  {
-    q: "How fast can I get a dumpster delivered?",
-    a: "Most days, same- or next-day. Call before noon and we can usually have a roll-off in your driveway by the end of the day.",
-  },
-  {
-    q: "What's included in the dumpster rental price?",
-    a: "Delivery, pickup, disposal up to the included weight allowance, and a 7-day rental period. No hidden weight or fuel fees.",
-  },
-  {
-    q: "How is junk removal priced?",
-    a: "By the volume your stuff takes up in our truck. You get an all-in price before we start.",
-  },
-  {
-    q: "Do you do same-day junk removal?",
-    a: "Yes — same-day service most days when you book before mid-morning. We confirm a 2-hour window and the crew calls 15–30 minutes before arriving.",
-  },
-  {
-    q: "What areas do you serve?",
-    a: "Fairfield County and Westchester County are our home turf, plus New Haven, Hartford, Middlesex, Litchfield, and New London Counties in CT. See our locations page for the full list.",
-  },
-];
+import { HOMEPAGE_FAQS } from "@/content/faqs";
 
 export default function HomePage() {
   return (
@@ -55,9 +33,9 @@ export default function HomePage() {
             alt="U.S. Carting roll-off dumpster truck"
             fill
             priority
-            className="object-cover opacity-30"
+            className="object-cover"
           />
-          <div className="absolute inset-0 bg-gradient-to-r from-[var(--color-ink)] via-[var(--color-ink)]/85 to-[var(--color-ink)]/40" />
+          <div className="absolute inset-0 bg-gradient-to-b from-[var(--color-ink)]/25 via-[var(--color-ink)]/40 to-[var(--color-ink)]/75" />
         </div>
         <Container className="relative py-20 md:py-32">
           <div className="max-w-3xl">
@@ -84,10 +62,11 @@ export default function HomePage() {
                 <Phone size={16} /> {SITE.phone}
               </a>
             </div>
-            <div className="mt-10 grid grid-cols-3 gap-4 max-w-xl">
+            <div className="mt-10 grid grid-cols-2 sm:grid-cols-4 gap-4 max-w-2xl">
               <Stat label="Years in business" value="10+" />
+              <Stat label="Trucks in fleet" value="5" />
+              <Stat label="Dumpsters in fleet" value="104" />
               <Stat label="Cities served" value="70+" />
-              <Stat label="Same-day jobs" value="Daily" />
             </div>
           </div>
         </Container>
@@ -108,7 +87,7 @@ export default function HomePage() {
       <Section>
         <SectionHeader
           eyebrow="What we do"
-          title="Two trucks. Four can sizes. One phone number."
+          title="Five trucks. 104 dumpsters. One phone number."
           description="Whether you need a roll-off dropped today or a crew to clear out a basement, we run both sides of the operation under one roof."
         />
         <div className="mt-12 grid gap-5 md:grid-cols-2 lg:grid-cols-4">
@@ -276,9 +255,19 @@ export default function HomePage() {
 
       <Section bg="soft">
         <SectionHeader eyebrow="Frequently asked" title="The fast answers." align="center" />
-        <div className="mt-10 max-w-3xl mx-auto">
-          <FaqAccordion items={FAQS} />
-          <div className="mt-8 text-center">
+        <div className="mt-10 max-w-3xl mx-auto space-y-6">
+          {HOMEPAGE_FAQS.map((f) => (
+            <div
+              key={f.q}
+              className="rounded-2xl bg-white border border-[var(--color-line)] p-6"
+            >
+              <h3 className="font-bold text-lg text-[var(--color-ink)] mb-2">
+                {f.q}
+              </h3>
+              <p className="text-[var(--color-steel)] leading-relaxed">{f.a}</p>
+            </div>
+          ))}
+          <div className="text-center pt-4">
             <Link href="/faq" className="btn-secondary">
               See the full FAQ <ArrowRight size={16} />
             </Link>
@@ -286,6 +275,7 @@ export default function HomePage() {
         </div>
       </Section>
 
+      <FaqJsonLd items={HOMEPAGE_FAQS} />
       <CtaBanner />
     </>
   );

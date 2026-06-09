@@ -7,6 +7,7 @@ import { Section, SectionHeader } from "@/components/Section";
 import { CtaBanner } from "@/components/CtaBanner";
 import { FaqAccordion } from "@/components/Accordion";
 import { QuoteFormEmbed } from "@/components/QuoteFormEmbed";
+import { FaqJsonLd, BreadcrumbJsonLd, ServiceJsonLd } from "@/components/JsonLd";
 import { COMMERCIAL } from "@/content/commercial";
 import { SITE } from "@/lib/site";
 
@@ -115,6 +116,20 @@ export default async function CommercialDetailPage({
         </div>
       </Section>
 
+      <ServiceJsonLd
+        name={c.title}
+        description={c.metaDescription}
+        url={`/commercial/${c.slug}`}
+        serviceType={c.title}
+      />
+      {c.faq?.length ? <FaqJsonLd items={c.faq} /> : null}
+      <BreadcrumbJsonLd
+        items={[
+          { name: "Home", path: "/" },
+          { name: "Commercial", path: "/commercial" },
+          { name: c.title, path: `/commercial/${c.slug}` },
+        ]}
+      />
       <CtaBanner />
     </>
   );

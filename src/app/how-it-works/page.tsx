@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { PageHero } from "@/components/PageHero";
 import { Section, SectionHeader } from "@/components/Section";
 import { CtaBanner } from "@/components/CtaBanner";
+import { BreadcrumbJsonLd } from "@/components/JsonLd";
 
 export const metadata: Metadata = {
   title: "How It Works — Dumpster Rentals & Junk Removal",
@@ -51,6 +52,12 @@ export default function HowItWorksPage() {
       </Section>
 
       <CtaBanner />
+          <BreadcrumbJsonLd
+        items={[
+          { name: "Home", path: "/" },
+          { name: "How It Works", path: "/how-it-works" },
+        ]}
+      />
     </>
   );
 }

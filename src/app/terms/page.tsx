@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { PageHero } from "@/components/PageHero";
 import { Section } from "@/components/Section";
+import { BreadcrumbJsonLd } from "@/components/JsonLd";
 
 export const metadata: Metadata = {
   title: "Terms of Service",
@@ -45,6 +46,12 @@ export default function TermsPage() {
           <p>Questions about these terms? Email info@uscarting.com or call (917) 664-4794.</p>
         </div>
       </Section>
+          <BreadcrumbJsonLd
+        items={[
+          { name: "Home", path: "/" },
+          { name: "Terms", path: "/terms" },
+        ]}
+      />
     </>
   );
 }

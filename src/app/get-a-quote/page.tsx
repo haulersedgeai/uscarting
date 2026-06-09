@@ -4,6 +4,7 @@ import { Truck, Trash2, ArrowRight } from "lucide-react";
 import { PageHero } from "@/components/PageHero";
 import { Section } from "@/components/Section";
 import { QuoteFormEmbed } from "@/components/QuoteFormEmbed";
+import { BreadcrumbJsonLd } from "@/components/JsonLd";
 
 export const metadata: Metadata = {
   title: "Get An Instant Quote — Dumpster Rental or Junk Removal",
@@ -26,6 +27,12 @@ export default function QuotePage({
       />
 
       <QuoteInner promise={searchParams} />
+          <BreadcrumbJsonLd
+        items={[
+          { name: "Home", path: "/" },
+          { name: "Get A Quote", path: "/get-a-quote" },
+        ]}
+      />
     </>
   );
 }

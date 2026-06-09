@@ -38,14 +38,23 @@ export function LocalBusinessSchema() {
         closes: "18:00",
       },
     ],
-    areaServed: LOCATIONS.map((l) => ({
-      "@type": "City",
-      name: l.name,
-      containedInPlace: {
-        "@type": "AdministrativeArea",
-        name: `${l.county}, ${l.state}`,
-      },
-    })),
+    areaServed: [
+      { "@type": "AdministrativeArea", name: "Fairfield County, CT" },
+      { "@type": "AdministrativeArea", name: "Westchester County, NY" },
+      { "@type": "AdministrativeArea", name: "New Haven County, CT" },
+      { "@type": "AdministrativeArea", name: "Hartford County, CT" },
+      { "@type": "AdministrativeArea", name: "Litchfield County, CT" },
+      { "@type": "AdministrativeArea", name: "Middlesex County, CT" },
+      { "@type": "AdministrativeArea", name: "New London County, CT" },
+      ...LOCATIONS.map((l) => ({
+        "@type": "City",
+        name: l.name,
+        containedInPlace: {
+          "@type": "AdministrativeArea",
+          name: `${l.county}, ${l.state}`,
+        },
+      })),
+    ],
     sameAs: [],
   };
 

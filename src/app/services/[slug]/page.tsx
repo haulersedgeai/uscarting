@@ -7,7 +7,9 @@ import { Section, SectionHeader } from "@/components/Section";
 import { CtaBanner } from "@/components/CtaBanner";
 import { FaqAccordion } from "@/components/Accordion";
 import { QuoteFormEmbed } from "@/components/QuoteFormEmbed";
+import { FaqJsonLd, BreadcrumbJsonLd, ServiceJsonLd } from "@/components/JsonLd";
 import { SERVICES } from "@/content/services";
+import { EXTRA_SERVICE_FAQS } from "@/content/faqs";
 import { SITE } from "@/lib/site";
 
 export function generateStaticParams() {
@@ -40,6 +42,11 @@ export default async function ServicePage({
   const related = (svc.relatedSlugs ?? [])
     .map((s) => SERVICES.find((x) => x.slug === s))
     .filter((x): x is (typeof SERVICES)[number] => Boolean(x));
+
+  const mergedFaqs = [
+    ...(svc.faq ?? []),
+    ...(EXTRA_SERVICE_FAQS[svc.slug] ?? []),
+  ];
 
   const formKind =
     svc.category === "rental" ? "dumpster" : svc.category === "junk" || svc.category === "cleanout" ? "junk" : "contact";
@@ -79,12 +86,12 @@ export default async function ServicePage({
               ))}
             </div>
 
-            {svc.faq?.length ? (
+            {mergedFaqs.length ? (
               <>
                 <h2 className="mt-12 text-2xl md:text-3xl font-extrabold text-[var(--color-ink)] mb-6">
                   Common questions
                 </h2>
-                <FaqAccordion items={svc.faq} />
+                <FaqAccordion items={mergedFaqs} />
               </>
             ) : null}
           </div>
@@ -146,6 +153,20 @@ export default async function ServicePage({
         </Section>
       ) : null}
 
+      <ServiceJsonLd
+        name={svc.title}
+        description={svc.metaDescription}
+        url={`/services/${svc.slug}`}
+        serviceType={svc.title}
+      />
+      {mergedFaqs.length ? <FaqJsonLd items={mergedFaqs} /> : null}
+      <BreadcrumbJsonLd
+        items={[
+          { name: "Home", path: "/" },
+          { name: "Services", path: "/services" },
+          { name: svc.title, path: `/services/${svc.slug}` },
+        ]}
+      />
       <CtaBanner />
     </>
   );

@@ -38,6 +38,13 @@ export const metadata: Metadata = {
     url: SITE.url,
     siteName: SITE.legalName,
     type: "website",
+    locale: "en_US",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "U.S. Carting — Dumpster Rentals & Junk Removal",
+    description:
+      "Same-day roll-off dumpsters and full-service junk removal across CT & NY.",
   },
   robots: { index: true, follow: true },
   verification: GSC_VERIFICATION ? { google: GSC_VERIFICATION } : undefined,

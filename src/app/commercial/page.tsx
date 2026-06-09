@@ -4,6 +4,7 @@ import { ArrowRight, Building, Truck, Briefcase, Building2, Home } from "lucide-
 import { PageHero } from "@/components/PageHero";
 import { Section, SectionHeader } from "@/components/Section";
 import { CtaBanner } from "@/components/CtaBanner";
+import { BreadcrumbJsonLd } from "@/components/JsonLd";
 import { COMMERCIAL } from "@/content/commercial";
 
 export const metadata: Metadata = {
@@ -71,6 +72,12 @@ export default function CommercialPage() {
       <CtaBanner
         title="Need a commercial quote?"
         description="Call us or send the details. We respond same-day on weekdays."
+      />
+          <BreadcrumbJsonLd
+        items={[
+          { name: "Home", path: "/" },
+          { name: "Commercial", path: "/commercial" },
+        ]}
       />
     </>
   );

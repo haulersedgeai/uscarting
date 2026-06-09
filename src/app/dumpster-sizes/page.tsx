@@ -5,6 +5,7 @@ import { ArrowRight, Check } from "lucide-react";
 import { PageHero } from "@/components/PageHero";
 import { Section, SectionHeader } from "@/components/Section";
 import { CtaBanner } from "@/components/CtaBanner";
+import { BreadcrumbJsonLd } from "@/components/JsonLd";
 import { DUMPSTER_SIZES } from "@/content/dumpster-sizes";
 
 export const metadata: Metadata = {
@@ -97,6 +98,12 @@ export default function DumpsterSizesPage() {
       </Section>
 
       <CtaBanner />
+          <BreadcrumbJsonLd
+        items={[
+          { name: "Home", path: "/" },
+          { name: "Dumpster Sizes", path: "/dumpster-sizes" },
+        ]}
+      />
     </>
   );
 }

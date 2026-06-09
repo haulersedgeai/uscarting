@@ -7,7 +7,10 @@ import { PageHero } from "@/components/PageHero";
 import { Section, SectionHeader } from "@/components/Section";
 import { CtaBanner } from "@/components/CtaBanner";
 import { QuoteFormEmbed } from "@/components/QuoteFormEmbed";
+import { FaqAccordion } from "@/components/Accordion";
+import { FaqJsonLd, BreadcrumbJsonLd } from "@/components/JsonLd";
 import { DUMPSTER_SIZES } from "@/content/dumpster-sizes";
+import { SIZE_FAQS } from "@/content/faqs";
 import { SITE } from "@/lib/site";
 
 export function generateStaticParams() {
@@ -37,6 +40,8 @@ export default async function DumpsterSizePage({
   const related = (d.relatedSlugs ?? [])
     .map((s) => DUMPSTER_SIZES.find((x) => x.slug === s))
     .filter((x): x is (typeof DUMPSTER_SIZES)[number] => Boolean(x));
+
+  const faqs = SIZE_FAQS[d.slug] ?? [];
 
   return (
     <>
@@ -156,8 +161,20 @@ export default async function DumpsterSizePage({
         </div>
       </Section>
 
-      {related.length > 0 ? (
+      {faqs.length > 0 ? (
         <Section>
+          <SectionHeader
+            eyebrow="Common questions"
+            title={`About the ${d.size} dumpster`}
+          />
+          <div className="mt-10 max-w-3xl">
+            <FaqAccordion items={faqs} />
+          </div>
+        </Section>
+      ) : null}
+
+      {related.length > 0 ? (
+        <Section bg="soft">
           <SectionHeader eyebrow="Other sizes" title="Need bigger or smaller?" />
           <div className="mt-10 grid gap-5 md:grid-cols-3">
             {related.map((r) => (
@@ -177,6 +194,14 @@ export default async function DumpsterSizePage({
         </Section>
       ) : null}
 
+      {faqs.length > 0 ? <FaqJsonLd items={faqs} /> : null}
+      <BreadcrumbJsonLd
+        items={[
+          { name: "Home", path: "/" },
+          { name: "Dumpster Sizes", path: "/dumpster-sizes" },
+          { name: d.title, path: `/dumpster-sizes/${d.slug}` },
+        ]}
+      />
       <CtaBanner />
     </>
   );

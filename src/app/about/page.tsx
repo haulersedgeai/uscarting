@@ -4,6 +4,7 @@ import { ArrowRight, ShieldCheck, Recycle, Users, Truck } from "lucide-react";
 import { PageHero } from "@/components/PageHero";
 import { Section, SectionHeader } from "@/components/Section";
 import { CtaBanner } from "@/components/CtaBanner";
+import { BreadcrumbJsonLd } from "@/components/JsonLd";
 
 export const metadata: Metadata = {
   title: "About U.S. Carting — Family Owned Since 2014",
@@ -123,6 +124,12 @@ export default function AboutPage() {
       <CtaBanner
         title="Want to work with us?"
         description="Get an instant quote or call us — we answer the phone live, every weekday."
+      />
+      <BreadcrumbJsonLd
+        items={[
+          { name: "Home", path: "/" },
+          { name: "About", path: "/about" },
+        ]}
       />
     </>
   );

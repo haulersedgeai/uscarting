@@ -4,6 +4,7 @@ import { ArrowRight } from "lucide-react";
 import { PageHero } from "@/components/PageHero";
 import { Section, SectionHeader } from "@/components/Section";
 import { CtaBanner } from "@/components/CtaBanner";
+import { BreadcrumbJsonLd } from "@/components/JsonLd";
 import { SERVICES } from "@/content/services";
 
 export const metadata: Metadata = {
@@ -61,6 +62,12 @@ export default function ResidentialPage() {
       </Section>
 
       <CtaBanner />
+          <BreadcrumbJsonLd
+        items={[
+          { name: "Home", path: "/" },
+          { name: "Residential", path: "/residential" },
+        ]}
+      />
     </>
   );
 }

@@ -3,6 +3,7 @@ import { Phone, Mail, MapPin, Clock } from "lucide-react";
 import { PageHero } from "@/components/PageHero";
 import { Section } from "@/components/Section";
 import { QuoteFormEmbed } from "@/components/QuoteFormEmbed";
+import { BreadcrumbJsonLd } from "@/components/JsonLd";
 import { SITE } from "@/lib/site";
 
 export const metadata: Metadata = {
@@ -101,6 +102,12 @@ export default function ContactPage() {
           </div>
         </div>
       </Section>
+          <BreadcrumbJsonLd
+        items={[
+          { name: "Home", path: "/" },
+          { name: "Contact", path: "/contact" },
+        ]}
+      />
     </>
   );
 }
