@@ -90,6 +90,36 @@ export default function AboutPage() {
         </div>
       </Section>
 
+      <Section>
+        <div className="max-w-3xl">
+          <SectionHeader
+            eyebrow="Leadership"
+            title="About the Owner"
+          />
+          <div className="mt-6 space-y-5 text-[var(--color-steel)] text-lg leading-relaxed">
+            <p>[OWNER_BIO_PLACEHOLDER]</p>
+          </div>
+        </div>
+      </Section>
+
+      <Section bg="soft">
+        <div className="max-w-3xl">
+          <SectionHeader
+            eyebrow="Disclosure"
+            title="Ownership"
+          />
+          <div className="mt-6 space-y-5 text-[var(--color-steel)] text-lg leading-relaxed">
+            <p>
+              U.S. Carting is independently owned and operated. The same ownership
+              also operates Grizzly Junk Pros, a junk removal company serving
+              customers in other markets. The two businesses run with separate
+              teams, dispatch, fleets, and customer service — U.S. Carting&apos;s
+              focus is exclusively on Fairfield County and Westchester.
+            </p>
+          </div>
+        </div>
+      </Section>
+
       <CtaBanner
         title="Want to work with us?"
         description="Get an instant quote or call us — we answer the phone live, every weekday."
