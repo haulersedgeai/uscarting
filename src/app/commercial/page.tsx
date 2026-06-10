@@ -10,7 +10,7 @@ import { COMMERCIAL } from "@/content/commercial";
 export const metadata: Metadata = {
   title: "Commercial Hauling — Contractors, Property Managers & More",
   description:
-    "Net-30 billing, COIs on file, off-hours scheduling. We work with contractors, property managers, real estate agents, and businesses across CT & NY.",
+    "Net-30 billing, COIs on file, pre-scheduled service windows. We work with contractors, property managers, real estate agents, and businesses across CT & NY.",
 };
 
 const ICONS: Record<string, React.ReactNode> = {
@@ -27,7 +27,7 @@ export default function CommercialPage() {
       <PageHero
         eyebrow="Commercial"
         title="Built for the people who need it to just work."
-        description="Property managers, contractors, brokers, retailers, and restaurants — we operate on your timeline. COIs on file, net-30 billing for repeat clients, off-hours scheduling when the building requires it."
+        description="Property managers, contractors, brokers, retailers, and restaurants — we operate on your timeline. COIs on file, net-30 billing for repeat clients, early-morning and Saturday windows when the building requires it."
       />
 
       <Section>
@@ -58,7 +58,7 @@ export default function CommercialPage() {
           {[
             { title: "COI on file", body: "We email a Certificate of Insurance directly to your property manager." },
             { title: "Net-30 billing", body: "Repeat contractors and PMs get net-30 terms once we know each other." },
-            { title: "Off-hours work", body: "Evening and weekend scheduling when buildings require it." },
+            { title: "Flexible windows", body: "Early-morning and Saturday scheduling when buildings require it." },
             { title: "Bulk pricing", body: "Volume discounts across portfolios and multi-can projects." },
           ].map((f) => (
             <div key={f.title} className="rounded-2xl bg-white p-6 border border-[var(--color-line)]">

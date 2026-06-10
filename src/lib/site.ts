@@ -22,7 +22,7 @@ export const SITE = {
   },
   hours: [
     { day: "Mon–Sat", time: "7:00 AM – 6:00 PM" },
-    { day: "Sun", time: "Closed (24/7 for emergencies)" },
+    { day: "Sun", time: "Closed" },
   ],
   url: "https://www.uscarting.com",
   vercelUrl: "https://uscarting.vercel.app",

@@ -206,9 +206,13 @@ export default function CartingBagPage() {
       </Section>
 
       <Section>
-        <SectionHeader eyebrow="Reserve" title="Lock in a Carting Bag drop." />
+        <SectionHeader
+          eyebrow="Reserve"
+          title="Lock in a Carting Bag drop."
+          description="Tell us where to drop the bag and we'll confirm a delivery window. Pick 'Carting Bag' (or note it in the message) so the booking lands in the right queue."
+        />
         <div className="mt-10 rounded-2xl border border-[var(--color-line)] bg-white p-2 max-w-3xl mx-auto">
-          <QuoteFormEmbed kind="dumpster" />
+          <QuoteFormEmbed kind="contact" />
         </div>
       </Section>
 

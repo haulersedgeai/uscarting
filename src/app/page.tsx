@@ -197,7 +197,7 @@ export default function HomePage() {
           <SplitCard
             icon={<Building2 size={28} />}
             title="Commercial"
-            description="Property managers, real estate agents, retailers, restaurants, and contractors. Off-hours scheduling, COI on file, net-30 billing."
+            description="Property managers, real estate agents, retailers, restaurants, and contractors. Pre-scheduled service windows, COI on file, net-30 billing."
             cta="Commercial services"
             href="/commercial"
           />

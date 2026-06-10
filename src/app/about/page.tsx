@@ -98,7 +98,36 @@ export default function AboutPage() {
             title="About the Owner"
           />
           <div className="mt-6 space-y-5 text-[var(--color-steel)] text-lg leading-relaxed">
-            <p>[OWNER_BIO_PLACEHOLDER]</p>
+            <p>
+              U.S. Carting has been part of the Greenwich landscape since 2014,
+              but the team behind it changed hands in 2023.
+            </p>
+            <p>
+              Justin Hubbard acquired U.S. Carting from founder Pawel Urbanik
+              that year. The conversation started because Pawel was stepping
+              back from day-to-day operations and wanted to make sure his
+              customer base — the contractors, property managers, and
+              homeowners he&apos;d built relationships with over nearly a
+              decade — landed somewhere that would treat them the same way.
+            </p>
+            <p>
+              Pawel approached Justin specifically because of Grizzly Junk
+              Pros, the junk removal company Justin had built up in
+              Connecticut with a five-star reputation and a track record of
+              showing up when crews said they would. After a string of
+              conversations and a clean look at how Justin ran his operation,
+              Pawel sold U.S. Carting to him and the transition closed in
+              2023.
+            </p>
+            <p>
+              Under Justin&apos;s ownership, U.S. Carting carries the same
+              operational standard he built into Grizzly — real people
+              answering the phone, transparent pricing on the website,
+              same-day service when the call comes in early, and a focus on
+              doing the job right the first time. U.S. Carting&apos;s depot is
+              in Greenwich at 37 S Water Street, with service running across
+              Fairfield County and into Westchester County in New York.
+            </p>
           </div>
         </div>
       </Section>
@@ -111,11 +140,11 @@ export default function AboutPage() {
           />
           <div className="mt-6 space-y-5 text-[var(--color-steel)] text-lg leading-relaxed">
             <p>
-              U.S. Carting is independently owned and operated. The same ownership
-              also operates Grizzly Junk Pros, a junk removal company serving
-              customers in other markets. The two businesses run with separate
-              teams, dispatch, fleets, and customer service — U.S. Carting&apos;s
-              focus is exclusively on Fairfield County and Westchester.
+              U.S. Carting and Grizzly Junk Pros share common ownership under
+              Justin Hubbard. The two brands serve different markets — U.S.
+              Carting is dedicated to Fairfield County, CT and Westchester
+              County, NY, while Grizzly serves junk removal customers in other
+              markets.
             </p>
           </div>
         </div>

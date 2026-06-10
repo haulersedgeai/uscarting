@@ -27,7 +27,7 @@ export default function ServicesPage() {
       {categories.map((cat) => {
         const items = SERVICES.filter((s) => s.category === cat);
         if (items.length === 0) return null;
-        const showBagCard = cat === "specialty";
+        const showBagCard = cat === "rental";
         return (
           <Section key={cat} bg={cat === "junk" || cat === "demolition" ? "soft" : "default"}>
             <SectionHeader eyebrow={cat.replace("_", " ")} title={SERVICE_CATEGORIES[cat]} />

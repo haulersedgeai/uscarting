@@ -514,7 +514,7 @@ export const SERVICES: ServiceItem[] = [
     intro:
       "Closing a suite or downsizing the floor? We break down cubicles, haul desks and credenzas, recycle the e-waste, and get the space ready for the landlord walk-through.",
     whatsIncluded: [
-      "Off-hours scheduling for occupied buildings",
+      "Saturday and early-morning scheduling for occupied buildings",
       "COI on file with your property manager",
       "E-waste recycling included",
       "Donation drop-offs for in-good-shape furniture",
@@ -562,10 +562,10 @@ export const SERVICES: ServiceItem[] = [
     metaDescription:
       "Mattress turnovers, refresh cycles, and unit-by-unit clean-outs for hotels and multi-family properties.",
     intro:
-      "Refresh cycles, mattress turnovers, and tenant move-outs — we run high-volume jobs without slowing the property down. Off-hours scheduling and COIs on file with the property manager.",
+      "Refresh cycles, mattress turnovers, and tenant move-outs — we run high-volume jobs without slowing the property down. Pre-scheduled service windows and COIs on file with the property manager.",
     whatsIncluded: [
       "Volume-priced mattress turnovers",
-      "Off-hours scheduling",
+      "Pre-scheduled service windows",
       "COI on file",
       "Unit-by-unit clean-out coordination",
     ],

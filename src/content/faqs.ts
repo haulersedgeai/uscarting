@@ -116,7 +116,7 @@ export const FAQ_CATEGORIES: FaqCategory[] = [
     items: [
       {
         q: "How fast can you deliver a dumpster?",
-        a: "Same- or next-day across most of Fairfield and Westchester counties. Call before noon Monday–Friday and we can usually drop the can the same afternoon. Saturday delivery is available on request; Sunday is reserved for emergencies.",
+        a: "Same- or next-day across most of Fairfield and Westchester counties. Call before noon Monday–Friday and we can usually drop the can the same afternoon. Saturday delivery is available on request. We're closed Sundays.",
       },
       {
         q: "Do you offer same-day dumpster delivery?",
@@ -144,7 +144,7 @@ export const FAQ_CATEGORIES: FaqCategory[] = [
       },
       {
         q: "Do you work weekends?",
-        a: "Saturday delivery and pickup are routinely available. Sunday is reserved for emergencies or pre-arranged contractor jobs.",
+        a: "Saturday delivery and pickup are routinely available on request. We're closed Sundays — pre-arranged contractor jobs can be scheduled in advance.",
       },
     ],
   },
@@ -222,7 +222,7 @@ export const FAQ_CATEGORIES: FaqCategory[] = [
       },
       {
         q: "Do you offer commercial accounts?",
-        a: "Yes — property managers, real estate agents, retailers, restaurants, hotels, and contractors all run on commercial accounts with us. Net-30 invoicing, COIs on file, and off-hours scheduling are standard for commercial clients.",
+        a: "Yes — property managers, real estate agents, retailers, restaurants, hotels, and contractors all run on commercial accounts with us. Net-30 invoicing, COIs on file, and pre-scheduled service windows are standard for commercial clients.",
       },
       {
         q: "Do you provide a Certificate of Insurance (COI) on file?",
@@ -234,7 +234,7 @@ export const FAQ_CATEGORIES: FaqCategory[] = [
       },
       {
         q: "Who is the owner?",
-        a: "U.S. Carting is independently owned and operated out of Greenwich, CT. We run our own trucks, our own dispatch, and our own crews. Ownership disclosure and other corporate detail is on our /about page.",
+        a: "U.S. Carting is owned by Justin Hubbard and operates out of our depot at 37 S Water Street in Greenwich, CT. Full ownership disclosure and the story behind the 2023 acquisition are on our /about page.",
       },
     ],
   },
@@ -609,8 +609,8 @@ export const EXTRA_SERVICE_FAQS: Record<string, Faq[]> = {
   ],
   "office-cleanout": [
     {
-      q: "Can you work after hours?",
-      a: "Yes — off-hours and weekend work is standard for occupied office buildings. Send us your building's loading-dock hours and COI requirements at booking.",
+      q: "Can you work around our building's schedule?",
+      a: "Yes — Saturday work is routinely available for occupied office buildings, and we'll plan around loading-dock windows during our business hours. Send us your building's dock hours and COI requirements at booking.",
     },
     {
       q: "Do you donate office furniture?",

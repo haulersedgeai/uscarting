@@ -14,7 +14,7 @@ export const COMMERCIAL: CommercialItem[] = [
       "Same-day delivery on most calls",
       "Swap-outs and pulls on demand",
       "Net-30 billing for established accounts",
-      "After-hours coordination",
+      "Saturday scheduling on request",
     ],
     bestFor: [
       "General contractors running renovation jobs",
@@ -35,7 +35,7 @@ export const COMMERCIAL: CommercialItem[] = [
     whatsIncluded: [
       "COI on file",
       "Unit-by-unit pricing",
-      "Off-hours coordination",
+      "Pre-scheduled turnover windows",
       "Bulk pricing across portfolios",
     ],
     bestFor: [
@@ -59,7 +59,7 @@ export const COMMERCIAL: CommercialItem[] = [
       "Furniture haul-away",
       "E-waste recycling",
       "Broom-sweep finish",
-      "Off-hours scheduling",
+      "Saturday scheduling on request",
     ],
     bestFor: [
       "Companies vacating a suite",
@@ -73,11 +73,11 @@ export const COMMERCIAL: CommercialItem[] = [
     h1: "Retail & Restaurant Refresh-Out Hauling",
     metaTitle: "Retail & Restaurant Clean-Out & Refresh | U.S. Carting",
     metaDescription:
-      "Shelving, fixtures, kitchen equipment, furniture — hauled in one or two visits during off-hours.",
+      "Shelving, fixtures, kitchen equipment, furniture — hauled in one or two early-morning or Saturday visits so we're done before doors open.",
     intro:
-      "Stores and restaurants closing, renovating, or rebranding need a fast clear-out. We work off-hours so you can get back to selling food, drinks, or merch the next day.",
+      "Stores and restaurants closing, renovating, or rebranding need a fast clear-out. We schedule early-morning and Saturday windows so you can get back to selling food, drinks, or merch the next day.",
     whatsIncluded: [
-      "Off-hours scheduling",
+      "Saturday scheduling on request",
       "Fixture and shelving haul-away",
       "Kitchen equipment removal",
       "Quick turnaround between concepts",
